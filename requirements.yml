@@ -6,3 +6,4 @@ dependencies:
   - scikit-image
   - scikit-learn
   - nb_conda_kernels
+  - pandas
