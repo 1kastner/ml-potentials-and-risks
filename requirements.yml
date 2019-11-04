@@ -1,9 +1,0 @@
-﻿name: ml-hype-or-hybris
-channels:
-  - defaults
-dependencies:
-  - python=3.7
-  - scikit-image
-  - scikit-learn
-  - nb_conda_kernels
-  - pandas
