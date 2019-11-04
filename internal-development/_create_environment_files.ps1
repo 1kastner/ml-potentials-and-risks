@@ -8,7 +8,7 @@ conda env export --no-builds --from-history > environment.yml
 # Cut off hardcoded path which is in the last line
 $dirty_content = Get-Content environment.yml
 $clean_content = $dirty_content[0..($dirty_content.count-3)]
-$clean_content > requirements.yml
+$clean_content > environment.yml
 
 # To be on the safe side, also create an explicit file
 conda list --explicit > spec-file.txt

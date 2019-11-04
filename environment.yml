@@ -7,5 +7,3 @@ dependencies:
   - scikit-learn
   - python=3.7
   - pandas
-prefix: C:\Users\mkastner\AppData\Local\Continuum\anaconda3\envs\ml-hype-or-hybris
-
