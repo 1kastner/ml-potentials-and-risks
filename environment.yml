@@ -8,3 +8,4 @@ dependencies:
   - nb_conda_kernels
   - pandas
   - rise
+  - seaborn
