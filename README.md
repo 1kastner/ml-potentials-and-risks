@@ -1,6 +1,7 @@
 # Machine Learning: Hype oder Hybris
 
-Arbeitsmaterial für das Seminar "Einführung ins Maschinelle Lernen: Hype oder Hybris
+Arbeitsmaterial für das Seminar "Einführung ins Maschinelle Lernen: Hype oder Hybris".
+Diese Materialien sind in Vorträge und Selbstarbeitsphasen eingebettet, die den Aufgaben weiteren Kontext geben.
 
 ## Ausführen der Jupyter Notebooks
 
