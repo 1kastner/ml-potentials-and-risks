@@ -104,3 +104,4 @@ venv.bak/
 .mypy_cache/
 grenzen-von-ml/autos.csv
 textanalyse/spam.csv
+einfuehrende-beispiele/autos.csv
