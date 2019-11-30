@@ -1,6 +1,7 @@
 name: ml-hype-or-hybris
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - nb_conda_kernels
   - scikit-image
