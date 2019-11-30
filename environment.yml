@@ -12,3 +12,6 @@ dependencies:
   - seaborn
   - folium
   - opencv
+  - pip
+  - pip:
+    - sodapy
