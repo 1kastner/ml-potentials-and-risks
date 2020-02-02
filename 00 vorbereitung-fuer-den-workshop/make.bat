@@ -1,6 +1,6 @@
 :: Lösche alte Artefakte
 
-DEL *.aux *.log *.out *.blg
+DEL *.aux *.log *.out *.blg *.bbl
 
 :: Führe sämtliche Schritte durch, um die PDF korrekt zu entwickeln
 
@@ -14,7 +14,7 @@ pdflatex vorbereitung-auf-das-seminar.tex || goto :error
 ECHO SUCCESS!
 
 :: Lösche gerade erzeugte Artefakte
-DEL *.aux *.log *.out *.blg
+DEL *.aux *.log *.out *.blg *.bbl
 
 start vorbereitung-auf-das-seminar.pdf
 

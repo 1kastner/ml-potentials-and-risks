@@ -109,3 +109,4 @@ venv.bak/
 *.out
 00 vorbereitung-fuer-den-workshop/Literaturreferenzen/
 *.lnk
+*.bbl
