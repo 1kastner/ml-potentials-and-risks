@@ -1,32 +1,24 @@
 # Machine Learning: Hype oder Hybris
 
-Arbeitsmaterial für das Seminar "Einführung ins Maschinelle Lernen: Hype oder Hybris".
-Diese Materialien sind in Vorträge und Selbstarbeitsphasen eingebettet, die den Aufgaben weiteren Kontext geben.
+In diesem Repository wird das Arbeitsmaterial für das Seminar "Einführung ins Maschinelle Lernen: Hype oder Hybris" verwaltet.
+Sie sind in Vorträge und Selbstarbeitsphasen eingebettet, die den Aufgaben weiteren Kontext geben.
 
-## Ausführen der Jupyter Notebooks
+## Vorbereitung auf das Seminar
 
-Anaconda können Sie 
-[hier](https://www.anaconda.com/distribution/#download-section)
-herunterladen und danach auf dem eigenen Computer installieren.
-Clonen Sie das Repository mit git.
-Danach können sie die
-[environment.yml](https://github.com/1kastner/machine-learning-hype-or-hybris/blob/master/requirements.txt)
-importieren.
-Nutzen Sie hierfür das Kommandozeilen-Werkzeug conda, welches u. a. 
-[hier](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
-dokumentiert ist.
-Nach dem Importieren führen Sie in der Kommandozeile oder der PowerShell den Befel
-`conda activate ml-hype-or-hybris`
-aus.
-Während des Workshops können Sie bei Fragen jederzeit auf die Leitung zugehen.
+Das Herunterladen und die Installation von Software ebenso wie das Herunterladen und Entpacken von großen Datenmengen kostet viel Zeit.
+Diese Schritte sollen deswegen bereits vor dem Seminar vorgenommen werden.
+Eine Anleitung ist
+[in dieser PDF](./00%20vorbereitung-fuer-den-workshop/vorbereitung-auf-das-seminar.pdf)
+zu finden.
 
-Falls Sie während des Installationsprozesses auf große Hindernisse stoßen, können Sie die Jupyter Notebooks auch online über Binder ausführen.
-Klicken Sie dafür [hier](https://mybinder.org/v2/gh/1kastner/machine-learning-hype-or-hybris/master), um dieses GitHub-Repository online zu laden.
+## Ausführen auf leistungsschwachen Geräten
+
+Sie können die Jupyter Notebooks auch online über Binder ausführen.
+Klicken Sie dafür
+[auf diesen Binder-Starter](https://mybinder.org/v2/gh/1kastner/machine-learning-hype-or-hybris/master),
+um dieses GitHub-Repository online zu laden.
+Diese Webseite ist manchmal etwas langsam, weswegen eine lokale Installation zu bevorzugen ist.
 
 ## Lizenz
 
 Siehe [LICENSE](LICENSE).
-
-## GTSRB
-
-Siehe https://sid.erda.dk/public/archives/daaeac0d7ce1152aea9b61d9f1e19370/published-archive.html
