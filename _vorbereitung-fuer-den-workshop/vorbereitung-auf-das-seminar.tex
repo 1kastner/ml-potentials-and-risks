@@ -26,6 +26,7 @@
 
 \usepackage{xurl}  % break url
 
+
 \begin{document}
 
 \maketitle% this prints the handout title, author, and date
@@ -39,7 +40,8 @@ Falls Sie während des Seminars keinen eigenen leistungsfähigen Laptop zur Verf
 
 Im Folgenden wird aufgezählt, welche Software und welche Dateien benötigt werden.
 Hier gibt es nur manchmal eine zeitliche Abhängigkeit, schauen Sie also gerne schon etwas voraus und parallelisieren Sie Aufgaben da, wo dies den Prozess beschleunigt.
-
+Wenn Sie wenig Zeit haben, führen Sie einfach die fettgedruckten Schritte aus.
+Der Text drumherum beschreibt, warum diese Schritte gemacht werden und zeigt ein paar Alternativen auf.
 
 \section{Installation der IDE}
 
@@ -56,7 +58,10 @@ Bei der Standard-IDE steht die Seminarleitung bei technischen Problemen umfassen
 \end{marginfigure}
 
 Anaconda ist eine Python-Distribution, die die IDE \emph{Jupyter Notebook} bereits mit ausliefert.
-Unter \url{https://www.anaconda.com/distribution/#download-section} wählen Sie bitte die Version für Python 3 aus.
+{
+  \bfseries
+  Unter \url{https://www.anaconda.com/distribution/#download-section} wählen Sie die Anaconda-Version für Python 3 aus.
+}
 Dies sollte ungefähr wie in Abbildung\,\ref{fig:anaconda} aussehen.
 
 Falls Sie auf Ihrem PC zwei Accounts, einen Administrator-Account und einen Account fürs alltägliche Arbeiten, verwenden, seien Sie bitte vorsichtig.
@@ -83,7 +88,10 @@ Wer lieber Visualisierungen mag und klicken können möchte, kann sich eine von 
 aussuchen.
 Hier sollte natürlich neben dem Betriebssystem auch die Lizenz beachtet werden, falls man den Client später noch mal auf der Arbeit einsetzen möchte.
 
-Installieren Sie sich ein Tool Ihrer Wahl, um dann die aktuelle Version des git-Repositorys \url{https://github.com/1kastner/machine-learning-hype-or-hybris} klonen zu können.
+{
+  \bfseries
+  Installieren Sie sich ein Tool Ihrer Wahl, um dann die aktuelle Version des git-Repositorys \url{https://github.com/1kastner/machine-learning-hype-or-hybris} klonen zu können.
+}
 Bis zum Start des Seminars werden u.\,U. die Materialien noch überarbeitet oder erweitert.
 Aktualisieren Sie also bitte regelmäßig Ihre vorliegende Version.
 
@@ -100,8 +108,6 @@ Falls Lernmaterialien später noch angepasst werden, ist das Zusammenführen der
 \end{marginfigure}
 
 
-
-
 \section{Installation der Bibliotheken}
 
 Die Jupyter Notebooks, die Sie soeben heruntergeladen haben, benötigen jeweils spezielle Bibliotheken.
@@ -116,33 +122,31 @@ Dies kann auf zwei unterschiedlichen Wegen geschehen.
 
 \subsection{conda}
 
-Mit der Installation von Anaconda ist bereits das Kommandozeilentool \texttt{conda} vorhanden.
+Das Kommandozeilentool \texttt{conda} ist bereits mit Anaconda installiert worden.
 Unter Windows wird dies je nach Auswahl während der Installation nicht in die Pfad-Variable mit aufgenommen.
 Dann steht Ihnen immer noch die \emph{Anaconda Prompt} zur Verfügung.
-Weitere Informationen sind auf
-\url{https://docs.anaconda.com/anaconda/install/verify-install/#conda}
-zu finden.
-Eine Übersicht über das Kommandozeilentool ist auf
+Weitere Informationen gibt es auf
+\url{https://docs.anaconda.com/anaconda/install/verify-install/#conda}.
+Auf
 \url{https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file}
-einsehbar.
-Dort wird erläutert, wie eine existierende \texttt{environment.yml} eingelesen werden kann.
+wird erläutert, wie eine existierende \texttt{environment.yml} eingelesen werden kann.
 Folgen Sie der Anleitung und erstellen Sie die passende Umgebung.
 
 \subsection{Anaconda Navigator}
 
 Mit Anaconda Navigator kann die gleiche Aufgabe über eine graphische Oberfläche erledigt werden.
-In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import}.  
-Klicken Sie hierauf und behalten Sie den voreingestellten Datentyp \emph{Conda environment file} bei.
-Wählen Sie die \texttt{environment.yml} aus und schließen den Vorgang ab.
+{
+  \bfseries
+  In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import}.
+  Wählen Sie die \texttt{environment.yml} aus und schließen den Vorgang ab. 
+}
+
 
 \begin{figure}[h]
   \includegraphics{anaconda-navigator}
   \caption{Der Anaconda Navigator erlaubt das Importieren von \texttt{environment.yml}-Dateien.}%
 \label{fig:anaconda-navigator}
 \end{figure}
-
-
-
 
 \section{Download von Daten}
 
@@ -152,7 +156,9 @@ Im Seminar wollen wir aber auch über die Standard-Datensätze hinausgehen.
 \subsection{Verkehrsschilder}
 
 Auf \url{http://benchmark.ini.rub.de/index.php?section=gtsrb&subsection=dataset#Downloads} finden Sie den Link zum Download-Archiv.
-Laden Sie bitte die Datei \texttt{\detokenize{GTSRB_Final_Training_Images.zip}} herunter und entpacken Sie das ZIP-Archiv.
+{\bfseries
+  Laden Sie aus dem Download-Archiv die Datei \texttt{GTSRB\_Final\_Training\_Images.zip} herunter und entpacken Sie das ZIP-Archiv auf Ihrer lokalen Festplatte.
+}
 
 \bibliography{vorbereitung-auf-das-seminar}
 \bibliographystyle{plainnat}
