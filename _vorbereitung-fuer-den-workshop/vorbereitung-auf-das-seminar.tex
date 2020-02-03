@@ -40,16 +40,15 @@ Falls Sie während des Seminars keinen eigenen leistungsfähigen Laptop zur Verf
 
 Im Folgenden wird aufgezählt, welche Software und welche Dateien benötigt werden.
 Hier gibt es nur manchmal eine zeitliche Abhängigkeit, schauen Sie also gerne schon etwas voraus und parallelisieren Sie Aufgaben da, wo dies den Prozess beschleunigt.
-Wenn Sie wenig Zeit haben, führen Sie einfach die fettgedruckten Schritte aus.
 Der Text drumherum beschreibt, warum diese Schritte gemacht werden und zeigt ein paar Alternativen auf.
 
-\section{Installation der IDE}
+\section{Installation der IDE \emph{Jupyter Notebook}}
 
-Im Bereich Maschinelles Lernen und Data Science spielen Jupyter Notebooks eine immer größere Rolle%
-\cite{perkel_why_2018,hiltch_jupyter_2019}.
-Hierbei bezeichnen Jupyter Notebooks gleichzeitig das Medienformat als auch die Standard-IDE.
-Diese kann Jupyter Notebooks öffnen, den enthaltenen Code ausführen, die Visualisierungen nah am Code platziert anzeigen und das Ergebnis auch wieder speichern.
-Bei der Standard-IDE steht die Seminarleitung bei technischen Problemen umfassend zur Seite.
+Gehen Sie auf die Webseite
+\url{https://www.anaconda.com/distribution/#download-section} 
+und laden Sie die Anaconda-Version für Python 3 herunter.
+Anaconda ist eine Python-Distribution, die die IDE \emph{Jupyter Notebook} bereits mit ausliefert.
+Dies sollte ungefähr wie in Abbildung\,\ref{fig:anaconda} aussehen.
 
 \begin{marginfigure}
   \includegraphics{anaconda}
@@ -57,29 +56,30 @@ Bei der Standard-IDE steht die Seminarleitung bei technischen Problemen umfassen
 \label{fig:anaconda}
 \end{marginfigure}
 
-Anaconda ist eine Python-Distribution, die die IDE \emph{Jupyter Notebook} bereits mit ausliefert.
-{
-  \bfseries
-  Unter \url{https://www.anaconda.com/distribution/#download-section} wählen Sie die Anaconda-Version für Python 3 aus.
-}
-Dies sollte ungefähr wie in Abbildung\,\ref{fig:anaconda} aussehen.
-
-Falls Sie auf Ihrem PC zwei Accounts, einen Administrator-Account und einen Account fürs alltägliche Arbeiten, verwenden, seien Sie bitte vorsichtig.
+Falls Sie auf Ihrem PC zwei Accounts, einen Administrator- bzw.\ root-Account und einen Account fürs alltägliche Arbeiten, verwenden, seien Sie bitte vorsichtig.
 Die Installation von Anaconda erfordert keine Administratorenrechte.
-Eine Installation mit Administratorenrechten kann u.\,U. dazu führen, dass Anaconda nur für den Administrator installiert ist bzw. dass es zu Problemen mit der Rechteverwaltung kommt.
+Eine Installation mit Administratorenrechten kann u.\,U. dazu führen, dass Anaconda nur für den Administrator installiert ist bzw.\ dass es zu Problemen mit der Rechteverwaltung kommt.
 In der Vergangenheit hat ein erneutes Installieren von Anaconda dieses Problem dann \emph{nicht} beheben können.
 
-Folgen Sie den Installationsschritten und konsultieren Sie im Fehlerfall offizielle Quelle (wie z.\,B. \url{https://docs.anaconda.com/anaconda/install/}) oder Foren.
+Folgen Sie den Installationsschritten und konsultieren Sie im Fehlerfall offizielle Quellen (wie z.\,B. \url{https://docs.anaconda.com/anaconda/install/}) oder Foren.
+
+\newthought{Warum werden Jupyter Notebooks eingesetzt?}
+Im Bereich Maschinelles Lernen und Data Science spielen Jupyter Notebooks eine immer größere Rolle%
+\cite{perkel_why_2018,hiltch_jupyter_2019}.
+Hierbei bezeichnen Jupyter Notebooks gleichzeitig das Medienformat als auch die Standard-IDE.
+Das Medienformat ist auf JSON-Basis und enthält u.\,a.\ Text (inkl. Links etc.), Bilder und ausführbaren Code.
+Die gleichnamige IDE kann Jupyter Notebooks öffnen, den enthaltenen Code ausführen, die vom Code erzeugten Visualisierungen nah an diesem platziert anzeigen und das Ergebnis auch wieder speichern.
+Bei der Standard-IDE steht die Seminarleitung bei technischen Problemen umfassend zur Seite.
 
 
 \section{Bezug der Seminar-Materialien}
 
-Das Seminar besteht aus einer Zusammenstellung von u.\,a. Vorträgen, Diskussionen, gemeinsamem Programmieren und Gruppenarbeit.
-Unter \url{https://github.com/1kastner/machine-learning-hype-or-hybris} können Sie die Jupyter Notebooks (diesmal ist das Dateiformat gemeint) herunterladen.
-Die Plattform github erlaubt es, dies auf verschiedene Wege zu tun.
+Klonen Sie das git-Repository
+\url{https://github.com/1kastner/machine-learning-hype-or-hybris},
+damit Sie die Seminar-Materialien lokal haben -- dies umfasst nur den Programmieranteil.
+Falls Sie noch nie mit git gearbeitet haben, lesen Sie bitte die nächsten Absätze.
 
-\subsection{Klonen mit git}
-
+\newthought{Warum sollte ich git lernen?}
 Für die Versionsverwaltung ist git quasi der Standard und wird immer häufiger auch außerhalb der Software-Entwicklung eingesetzt.
 Deswegen lohnt es sich für (fast) jeden, sich Fähigkeiten mit diesem Tool anzueignen.
 Das Original-Tool ist ein Kommandozeilentool, welches über \url{https://git-scm.com/} heruntergeladen werden kann.
@@ -87,16 +87,10 @@ Wer lieber Visualisierungen mag und klicken können möchte, kann sich eine von 
 \sidenote{Eine Liste ist auf \url{https://git-scm.com/download/gui/win} zu finden.}
 aussuchen.
 Hier sollte natürlich neben dem Betriebssystem auch die Lizenz beachtet werden, falls man den Client später noch mal auf der Arbeit einsetzen möchte.
-
-{
-  \bfseries
-  Installieren Sie sich ein Tool Ihrer Wahl, um dann die aktuelle Version des git-Repositorys \url{https://github.com/1kastner/machine-learning-hype-or-hybris} klonen zu können.
-}
 Bis zum Start des Seminars werden u.\,U. die Materialien noch überarbeitet oder erweitert.
 Aktualisieren Sie also bitte regelmäßig Ihre vorliegende Version.
 
-\subsection{Download des ZIP-Ordners}
-
+\newthought{Ist es für das Seminar zwingend notwendig, git zu lernen?}
 Falls Ihnen git unbekannt ist und Sie keine Zeit dafür haben, sich mit git auseinanderzusetzen, gibt es auch die Möglichkeit, den Inhalt als ZIP-Ordner herunterzuladen.
 Klicken Sie dafür auf den Button, wie er in Abbildung\,\ref{fig:github} zu sehen ist.
 Falls Lernmaterialien später noch angepasst werden, ist das Zusammenführen der eigenen und der neuen Version allerdings schwieriger.
@@ -110,6 +104,17 @@ Falls Lernmaterialien später noch angepasst werden, ist das Zusammenführen der
 
 \section{Installation der Bibliotheken}
 
+Mit dem Anaconda Navigator können die Bibliotheken automatisch installiert werden.
+In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import}.
+Wählen Sie die \texttt{environment.yml} aus und schließen den Vorgang ab. 
+
+\begin{figure}[h]
+  \includegraphics{anaconda-navigator}
+  \caption{Der Anaconda Navigator erlaubt das Importieren von \texttt{environment.yml}-Dateien.}%
+\label{fig:anaconda-navigator}
+\end{figure}
+
+\newthought{Warum ist dieser Schritt notwendig?}
 Die Jupyter Notebooks, die Sie soeben heruntergeladen haben, benötigen jeweils spezielle Bibliotheken.
 Einige werden bereits bei der Installation mit Anaconda bereitgestellt, allerdings stehen für das Seminar noch Downloads von weiteren Bibliotheken aus.
 Auf der obersten Ebene des git-Repositorys befindet sich die Datei \texttt{environment.yml}, in der alle benötigten Bibliotheken aufgelistet werden.
@@ -117,36 +122,20 @@ Diese sollten Sie nun bereits auf dem PC in einem lokalen Ordner Ihrer Wahl vorl
 Das Format stammt von Anaconda und erlaubt es, die Abhängigkeiten von Bibliotheken automatisch aufzulösen.
 Damit man an einem PC in verschiedenen Projekten unterschiedliche Versionen einer gleichen Bibliothek haben kann,
 strukturiert Anaconda Bibliotheken standardmäßig in Umgebungen (eng. \emph{environments}.)
-Für das Seminar erstellen wir im Folgenden die Umgebung \texttt{ml-hype-or-hybris} basierend auf der gegebenen \texttt{environment.yml}.
-Dies kann auf zwei unterschiedlichen Wegen geschehen.
+Für das Seminar erstellen wir die Umgebung \texttt{ml-hype-or-hybris} basierend auf der gegebenen \texttt{environment.yml}.
 
-\subsection{conda}
-
-Das Kommandozeilentool \texttt{conda} ist bereits mit Anaconda installiert worden.
+\newthought{Aber ist es denn notwendig, hier mit einer GUI zu arbeiten?}
+Natürlich gibt es auch ein Kommandozeilentool, das bereits mit Anaconda installiert worden ist.
+Es heißt \texttt{conda}.
 Unter Windows wird dies je nach Auswahl während der Installation nicht in die Pfad-Variable mit aufgenommen.
 Dann steht Ihnen immer noch die \emph{Anaconda Prompt} zur Verfügung.
 Weitere Informationen gibt es auf
 \url{https://docs.anaconda.com/anaconda/install/verify-install/#conda}.
+
 Auf
 \url{https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file}
 wird erläutert, wie eine existierende \texttt{environment.yml} eingelesen werden kann.
 Folgen Sie der Anleitung und erstellen Sie die passende Umgebung.
-
-\subsection{Anaconda Navigator}
-
-Mit Anaconda Navigator kann die gleiche Aufgabe über eine graphische Oberfläche erledigt werden.
-{
-  \bfseries
-  In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import}.
-  Wählen Sie die \texttt{environment.yml} aus und schließen den Vorgang ab. 
-}
-
-
-\begin{figure}[h]
-  \includegraphics{anaconda-navigator}
-  \caption{Der Anaconda Navigator erlaubt das Importieren von \texttt{environment.yml}-Dateien.}%
-\label{fig:anaconda-navigator}
-\end{figure}
 
 \section{Download von Daten}
 
@@ -156,9 +145,8 @@ Im Seminar wollen wir aber auch über die Standard-Datensätze hinausgehen.
 \subsection{Verkehrsschilder}
 
 Auf \url{http://benchmark.ini.rub.de/index.php?section=gtsrb&subsection=dataset#Downloads} finden Sie den Link zum Download-Archiv.
-{\bfseries
-  Laden Sie aus dem Download-Archiv die Datei \texttt{GTSRB\_Final\_Training\_Images.zip} herunter und entpacken Sie das ZIP-Archiv auf Ihrer lokalen Festplatte.
-}
+Laden Sie aus dem Download-Archiv die Datei \texttt{GTSRB\_Final\_Training\_Images.zip} herunter und entpacken Sie das ZIP-Archiv auf Ihrer lokalen Festplatte.
+
 
 \bibliography{vorbereitung-auf-das-seminar}
 \bibliographystyle{plainnat}
