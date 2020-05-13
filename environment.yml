@@ -3,10 +3,12 @@ channels:
   - defaults
   - conda-forge
 dependencies:
+  - python=3.7
   - nb_conda_kernels
+  - jupyter_contrib_nbextensions
+  - jupyter_nbextensions_configurator
   - scikit-image
   - scikit-learn
-  - python=3.7
   - pandas
   - rise
   - seaborn
