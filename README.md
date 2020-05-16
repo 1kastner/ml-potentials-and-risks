@@ -19,6 +19,10 @@ Klicken Sie dafür
 um dieses GitHub-Repository online zu laden.
 Diese Webseite ist manchmal etwas langsam, weswegen eine lokale Installation zu bevorzugen ist.
 
+## Weiterführende Materialien
+
+Die Materialien mit dem Zusatz `--selbststudienzeit` dienen nach Abschluss des Seminars zu einer vertieften Auseinandersetzung mit dem Thema.
+
 ## Lizenz
 
 Siehe [LICENSE](LICENSE).
