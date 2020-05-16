@@ -42,7 +42,7 @@ Im Folgenden wird aufgezählt, welche Software und welche Dateien benötigt werd
 Hier gibt es nur manchmal eine zeitliche Abhängigkeit, schauen Sie also gerne schon etwas voraus und parallelisieren Sie Aufgaben da, wo dies den Prozess beschleunigt.
 Der Text drumherum beschreibt, warum diese Schritte gemacht werden und zeigt ein paar Alternativen auf.
 
-\section{Installation der IDE \emph{Jupyter Notebook}}
+\section{Installation der IDE Jupyter Notebook}
 
 Gehen Sie auf die Webseite
 \url{https://www.anaconda.com/distribution/#download-section} 
@@ -77,6 +77,8 @@ Die Seminarleitung empfiehlt neuen Benutzern die Verwendung der Standard-IDE.
 Klonen Sie das git-Repository
 \url{https://github.com/1kastner/machine-learning-hype-or-hybris},
 damit Sie die Seminar-Materialien lokal haben -- dies umfasst nur den Programmieranteil.
+Am einfachsten ist es, wenn Sie die Dateien lokal unterhalb des Ordners \texttt{Eigene Dateien} ablegen.
+Denn in diesem Ordner öffnet sich standardmäßig die IDE Jupyter Notebook.
 Falls Sie noch nie mit git gearbeitet haben, lesen Sie bitte die nächsten Absätze.
 
 \newthought{Warum sollte ich git lernen?}
@@ -137,15 +139,19 @@ Auf
 wird erläutert, wie eine existierende \texttt{environment.yml} eingelesen werden kann.
 Folgen Sie der Anleitung und erstellen Sie die passende Umgebung.
 
-\section{Download von Daten}
+\section{Start der IDE Jupyter Notebook}
 
-Manche der Jupyter Notebooks verwenden Daten, die bereits von den Bibliotheken bereitgestellt werden.
-Im Seminar wollen wir aber auch über die Standard-Datensätze hinausgehen.
+Die IDE Jupyter Notebook ist nun einsatzbereit.
+Sie kann nun z.\,B. über den Anaconda Navigator gestartet werden.
+In Abbildung~\ref{fig:start-ide} ist dies abgebildet.
+Zunächst muss die Umgebung \texttt{ml-hype-or-hybris} ausgewählt werden.
+Danach startet ein Klicken auf \texttt{Launch} die IDE.
 
-\subsection{Verkehrsschilder}
-
-Auf \url{http://benchmark.ini.rub.de/index.php?section=gtsrb&subsection=dataset#Downloads} finden Sie den Link zum Download-Archiv.
-Laden Sie aus dem Download-Archiv die Datei \texttt{GTSRB\_Final\_Training\_Images.zip} herunter und entpacken Sie das ZIP-Archiv auf Ihrer lokalen Festplatte.
+\begin{figure}[h]
+  \includegraphics{starte_jupyter_notebook}
+  \caption{Aus dem Anaconda Navigator kann ein Jupyter Notebook gleich mit der richtigen Umgebung gestartet werden.}%
+\label{fig:start-ide}
+\end{figure}
 
 
 \bibliography{vorbereitung-auf-das-seminar}
