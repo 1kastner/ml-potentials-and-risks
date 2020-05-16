@@ -9,6 +9,7 @@ dependencies:
   - jupyter_nbextensions_configurator
   - scikit-image
   - scikit-learn
+  - ipywidgets
   - pandas
   - rise
   - seaborn
