@@ -21,7 +21,7 @@ Diese Webseite ist manchmal etwas langsam, weswegen eine lokale Installation zu 
 
 ## Weiterführende Materialien
 
-Die Materialien mit dem Zusatz `--selbststudienzeit` dienen nach Abschluss des Seminars zu einer vertieften Auseinandersetzung mit dem Thema.
+Die Materialien im Ordner `05 weiterfuehrende-beispiele` dienen nach Abschluss des Seminars zu einer vertieften Auseinandersetzung mit dem Thema.
 
 ## Lizenz
 
