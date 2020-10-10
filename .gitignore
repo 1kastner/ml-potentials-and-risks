@@ -18,6 +18,7 @@ venv/
 *.synctex.gz
 
 # Databases
+**/.data-preprocessing/
 **/autos.csv
 **/spam.csv
 **/app_token.txt
