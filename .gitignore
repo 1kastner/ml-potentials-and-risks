@@ -25,3 +25,5 @@ venv/
 
 # Literature
 _vorbereitung-fuer-den-workshop/Literaturreferenzen/
+*.log
+_vorbereitung-fuer-den-workshop/.backup/
