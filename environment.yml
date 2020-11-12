@@ -9,19 +9,18 @@ dependencies:
   - nb_conda_kernels
   - jupyter_contrib_nbextensions
   - jupyter_nbextensions_configurator
-  - start_jupyter_cm
 
   # Necessary libraries for obligatory material
   - scikit-image
   - scikit-learn
   - pandas
-  - rise
-  - seaborn
 
   # This is only needed for '05 weiterfuehrende-beispiele'
   - ipywidgets
   - folium
   - opencv
+  - rise
+  - seaborn
   - pip
   - pip:
     - sodapy
