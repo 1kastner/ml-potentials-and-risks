@@ -4,23 +4,9 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7
-
   # Extend the Jupyter Notebook experience
   - nb_conda_kernels
-  - jupyter_contrib_nbextensions
-  - jupyter_nbextensions_configurator
-
   # Necessary libraries for obligatory material
   - scikit-image
   - scikit-learn
   - pandas
-
-  # This is only needed for '05 weiterfuehrende-beispiele'
-  - ipywidgets
-  - folium
-  - opencv
-  - rise
-  - seaborn
-  - pip
-  - pip:
-    - sodapy
