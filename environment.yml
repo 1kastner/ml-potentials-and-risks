@@ -1,12 +1,9 @@
 name: ml-hype-or-hybris
 channels:
   - defaults
-  - conda-forge
 dependencies:
-  - python=3.7
-  # Extend the Jupyter Notebook experience
+  - python=3.8
   - nb_conda_kernels
-  # Necessary libraries for obligatory material
   - scikit-image
   - scikit-learn
   - pandas
