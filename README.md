@@ -22,6 +22,7 @@ Diese Webseite ist manchmal etwas langsam, weswegen eine lokale Installation zu 
 ## Weiterführende Materialien
 
 Die Materialien im Ordner `05 weiterfuehrende-beispiele` dienen nach Abschluss des Seminars zu einer vertieften Auseinandersetzung mit dem Thema.
+In den ersten Zellen des Jupyter Notebooks werden die zusätzlich benötigten Bibliotheken installiert.
 
 ## Lizenz
 
