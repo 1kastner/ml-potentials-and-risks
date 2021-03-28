@@ -5,8 +5,6 @@ DEL *.aux *.log *.out *.blg *.bbl *.synctex(busy) *.synctex.gz
 :: Führe sämtliche Schritte durch, um die PDF korrekt zu entwickeln
 
 pdflatex Vorbereitung-auf-das-Seminar.tex || goto :error
-bibtex Vorbereitung-auf-das-Seminar || goto :error
-pdflatex Vorbereitung-auf-das-Seminar.tex || goto :error
 pdflatex Vorbereitung-auf-das-Seminar.tex || goto :error
 
 :: Wenn die PDF erfolgreich erstellt worden ist,
