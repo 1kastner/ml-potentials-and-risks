@@ -8,7 +8,7 @@ Sie sind in Vorträge und Selbstarbeitsphasen eingebettet, die den Aufgaben weit
 Das Herunterladen und die Installation von Software ebenso wie das Herunterladen und Entpacken von großen Datenmengen kostet viel Zeit.
 Diese Schritte sollen deswegen bereits vor dem Seminar vorgenommen werden.
 Eine Anleitung ist
-[in dieser PDF](./_vorbereitung-fuer-den-workshop/vorbereitung-auf-das-seminar.pdf)
+[in dieser PDF](./Vorbereitung-auf-das-Seminar.pdf)
 zu finden.
 
 ## Ausführen auf leistungsschwachen Geräten
