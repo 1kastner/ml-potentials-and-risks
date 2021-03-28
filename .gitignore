@@ -16,6 +16,7 @@ venv/
 *.blg
 *.synctex(busy)
 *.synctex.gz
+_internal/**.pdf
 
 # Databases
 **/.data-preprocessing/
