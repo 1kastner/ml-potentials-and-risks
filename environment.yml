@@ -1,9 +1,25 @@
-name: ml-hype-or-hybris
+name: ml-potentials-and-risks
 channels:
-  - defaults
+  - conda-forge
 dependencies:
   - python=3.8
+
+  # Development Experience
+  - jupyterlab
   - nb_conda_kernels
+  - jupyterlab-lsp
+  - autopep8
+  - pyflakes
+  - rope
+  - git
+  - pip
+  - pip:
+    - git+https://github.com/krassowski/python-language-server.git@main
+
+  # Required libraries
+  - numpy
+  - pandas
+  - matplotlib
+  - folium
   - scikit-image
   - scikit-learn
-  - pandas

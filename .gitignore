@@ -28,3 +28,4 @@ _internal/**.pdf
 _vorbereitung-fuer-den-workshop/Literaturreferenzen/
 *.log
 _vorbereitung-fuer-den-workshop/.backup/
+.virtual_documents/
