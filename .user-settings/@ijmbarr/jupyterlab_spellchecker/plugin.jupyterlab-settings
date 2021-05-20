@@ -7,6 +7,13 @@
     // Words to be ignored by the spellchecker
     // Case-sensitive list of words to be ignored
     "ignore": [
+        "Zahlenwert",
+        "Datensätzen",
+        "Genauigkeitswerte",
+        "Scheinkorrelationen",
+        "Vorhersagemodelle",
+        "Zusammenhang",
+        "Zielvariable",
         "Forest",
         "Eingabedaten",
         "Entscheidungsbäumen",
