@@ -5,14 +5,19 @@ dependencies:
   - python=3.8
 
   # Development Experience
-  - jupyterlab
+  - jupyterlab=3
+  - jupyterlab-spellchecker
   - nb_conda_kernels
   - jupyterlab-lsp
   - autopep8
   - pyflakes
   - rope
-  - git
+  - mccabe
+  - yapf
+  - pylint
+  - pydocstyle
   - pip
+  - git
   - pip:
     - git+https://github.com/krassowski/python-language-server.git@main
 
