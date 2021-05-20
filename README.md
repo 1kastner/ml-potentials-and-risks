@@ -15,7 +15,7 @@ zu finden.
 
 Sie können die Jupyter Notebooks auch online über Binder ausführen.
 Klicken Sie dafür
-[auf diesen Binder-Starter](https://mybinder.org/v2/gh/1kastner/machine-learning-hype-or-hybris/master),
+[auf diesen Binder-Starter](https://mybinder.org/v2/gh/1kastner/machine-learning-hype-or-hybris/master?urlpath=lab),
 um dieses GitHub-Repository online zu laden.
 Diese Webseite ist manchmal etwas langsam, weswegen eine lokale Installation zu bevorzugen ist.
 
