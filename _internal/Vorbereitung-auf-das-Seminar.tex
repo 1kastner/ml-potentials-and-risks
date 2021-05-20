@@ -4,8 +4,9 @@
 \usepackage[autostyle=true,german=quotes]{csquotes}
 \usepackage{hyphsubst} %\HyphSubstLet{ngerman}{ngerman-x-latest} % für die Trennung von zwei-schrittig
 \usepackage[ngerman]{babel}   % neue deutsche Rechtschreibung (z. B. auch für Silbentrennung)
+\usepackage[htt]{hyphenat}  % Umbruch bei \texttt
 
-\title{Vorbereitung für das Seminar \enquote{Einführung ins Maschinelle Lernen: Hype oder Hybris}}
+\title{Vorbereitung für das Seminar \enquote{Einführung ins Maschinelle Lernen: Hype oder Hybris?}}
 
 \author{Marvin Kastner \href{mailto:marvin.kastner@tuhh.de}{<marvin.kastner@tuhh.de>}}
 
@@ -32,13 +33,14 @@
 \begin{abstract}
 \noindent
 In diesem Dokument werden die Schritte aufgezählt, die von den Seminarteilnehmern selbständig \emph{vor} Beginn des Seminars auf dem eigenen Endgerät (PC, Laptop, Apple, ...) durchgeführt werden müssen.
-Dies ist notwendig, weil zur Einrichtung der Arbeitsumgebung mehrere Gigabyte Daten heruntergeladen und verarbeitet werden.
-Falls Sie während des Seminars keinen eigenen leistungsfähigen Laptop zur Verfügung haben sollten, sprechen Sie bitte frühzeitig die Seminarleitung an.
+Dies ist notwendig, weil zur Einrichtung der Arbeitsumgebung mehrere Gigabyte Daten heruntergeladen und verarbeitet werden müssen.
+Bitte planen Sie genügend Zeit hierfür ein.
+Falls Sie während des Seminars kein eigenes leistungsfähiges Endgerät (z.\,B. nur einen alten Laptop oder ein Tablet) zur Verfügung haben sollten, sprechen Sie bitte frühzeitig die Seminarleitung an.
 \end{abstract}
 
 Im Folgenden wird aufgezählt, welche Software und welche Dateien benötigt werden.
 Hier gibt es nur manchmal eine zeitliche Abhängigkeit, schauen Sie also gerne schon etwas voraus und parallelisieren Sie Aufgaben da, wo dies den Prozess beschleunigt.
-Der zusätzliche Text beschreibt, warum diese Schritte gemacht werden und zeigt ein paar Alternativen auf.
+Die Absätze, die mit einer Frage beginnen, beschreiben, warum diese Schritte gemacht werden und zeigt manchmal Alternativen auf.
 
 
 \section{Installation von JupyterLab}
@@ -56,10 +58,10 @@ Der Download-Bereich der Webseite sollte ungefähr wie in Abbildung\,\ref{fig:an
 \end{marginfigure}
 
 Falls Sie auf Ihrem Endgerät zwei Accounts, einen Administrator- bzw.\ root-Account und einen Account fürs alltägliche Arbeiten, verwenden, seien Sie bitte vorsichtig.
-Die Installation von Anaconda erfordert \emph{keine} erhöhten Rechte.
-Verwenden Sie bitte einfach den normalen Nutzeraccount.
-Eine Installation durch einen Nutzer mit erhöhten Rechten  kann u.\,U. dazu führen, dass Anaconda nur für diesen  installiert ist und die Dateien für die anderen Nutzeraccount auf dem Endgerät nicht nutzbar sind.
-Diese Probleme mit der Rechteverwaltung sind umfangreich und diese zu beheben ist sehr zeitaufwändig.
+Die Installation von Anaconda erfordert keine erhöhten Rechte.
+Eine Installation mit einem Nutzer mit erhöhten Rechten (z.\,B. \emph{root} oder einem dedizierten Admin-Account unter Windows) kann u.\,U. dazu führen, dass Anaconda nur für diesen einen Nutzer mit erhöhten Rechten installiert ist bzw.\ dass es zu Problemen mit der Rechteverwaltung kommt.
+In der Vergangenheit hat ein erneutes Installieren von Anaconda dieses Problem dann \emph{nicht} beheben können.
+Lösungen hierfür lassen sich unter \url{https://docs.anaconda.com/anaconda/install/multi-user/} finden. 
 
 Rufen Sie nach dem Download den Installer auf und folgen Sie den Installationsschritten.
 Konsultieren Sie im Fehlerfall offizielle Quellen des Herstellers (wie z.\,B. \url{https://docs.anaconda.com/anaconda/install/})
@@ -88,14 +90,14 @@ Falls Sie noch nie mit git gearbeitet haben, lesen Sie bitte die nächsten Absä
 \newthought{Warum sollte ich git lernen?}
 Für die Versionsverwaltung ist git quasi der Standard und wird immer häufiger auch außerhalb der Software-Entwicklung, aus der git ursprünglich stammt, eingesetzt.
 Deswegen lohnt es sich für (fast) jeden, sich Fähigkeiten mit diesem Tool anzueignen.
-Das Original-Tool ist ein Kommandozeilentool, welches über \url{https://git-scm.com/} heruntergeladen werden kann.
-Wer lieber grafische Oberflächen mag, kann sich eine von vielen GUI Clients%
+Es ist als ein Kommandozeilentool entwickelt worden, welches über \url{https://git-scm.com/} heruntergeladen werden kann.
+Wer lieber grafische Oberflächen mag, kann sich eine von vielen GUI-Clients%
 \sidenote{Eine Liste ist auf \url{https://git-scm.com/download/gui/win} zu finden.}
 aussuchen.
 Hier sollte neben dem Betriebssystem auch die ggf.\ kostenpflichtige Lizenz beachtet werden.
 Einige Lizenzen unterscheiden z.\,B. zwischen der privaten Verwendung und der Verwendung im Arbeitskontext.
 Bis zum Start des Seminars werden u.\,U. die Materialien noch überarbeitet oder erweitert.
-Aktualisieren Sie also bitte regelmäßig Ihre vorliegende Version über ein \texttt{git pull} bzw.\ durch das Klicken auf den Button \enquote{Pull} im GUI-Client Ihrer Wahl.
+Aktualisieren Sie also bitte regelmäßig Ihre vorliegende Version über ein \texttt{git pull} bzw.\ durch das Klicken auf den \enquote{Pull}-Button im GUI-Client Ihrer Wahl.
 
 \newthought{Ist es für das Seminar zwingend notwendig, git zu lernen?}
 Falls Ihnen git unbekannt ist und Sie keine Zeit dafür haben, sich mit git auseinanderzusetzen, gibt es auch die Möglichkeit, den Inhalt als ZIP-Ordner herunterzuladen.
@@ -111,7 +113,11 @@ Falls Lernmaterialien später noch angepasst werden, müssen Sie diese dann alle
 
 \section{Installation der Bibliotheken}
 
-Mit dem Anaconda Navigator können die für das Seminar  benötigten Bibliotheken automatisch inklusive der Abhängigkeiten installiert werden.
+Mit der Installation von Anaconda ist u.\,a. die Applikation Anaconda Navigator ausgeliefert worden.
+Mit dem Anaconda Navigator können die benötigten Bibliotheken automatisch installiert werden.
+\marginnote{%
+	Falls Sie Windows 10 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei \texttt{create-env.bat} auf der Wurzelebene des Projekts durch einen Doppelklick ausführen.
+}
 In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import} (im Screenshot mit einer (1) markiert).
 Klicken Sie diesen an.
 Damit öffnet sich das Fenster \enquote{Import new environment}.
@@ -120,7 +126,7 @@ Klicken Sie hier auf den Ordner in der Zeile, die mit
 beginnt (mit einer (2) markiert).
 Danach öffnet sich ein Fenster (mit einer (3) markiert), in dem Sie dann zu den von GitHub bezogenen Dateien navigieren können.
 Wählen Sie die Datei \texttt{environment.yml} aus
--- sie liegt auf der obersten Ebene des Projektordners --
+-- sie liegt auf der Wurzelebene des Projektordners --
 und klicken Sie auf \enquote{Öffnen}.
 Das Erstellen der Umgebung nimmt für gewöhnlich mehrere Minuten in Anspruch.
 
@@ -131,11 +137,11 @@ Das Erstellen der Umgebung nimmt für gewöhnlich mehrere Minuten in Anspruch.
 \end{figure}
 
 \newthought{Warum ist dieser Schritt notwendig?}
-Die Jupyter Notebooks, die Sie soeben heruntergeladen haben, benötigen eine bestimmte Umgebung, damit sie wie gewünscht geöffnet und ausgeführt werden können.
+Die Jupyter Notebooks, die Sie soeben von GitHub bezogen haben, benötigen eine bestimmte Umgebung, damit sie wie gewünscht geöffnet und ausgeführt werden können.
 Zu dieser Umgebung gehört z.\,B. ein Python-Interpreter mit einer bestimmten Python-Version ebenso wie eine Reihe ausgewählter Python-Bibliotheken.
 Auf der obersten Ebene des git-Repositorys befindet sich die Datei \texttt{environment.yml}, in der alle Anforderungen an die Entwicklungsumgebung aufgeführt werden.
 Die Struktur der Datei \texttt{environment.yml} ist von Anaconda vorgegeben und erlaubt es, die Abhängigkeiten von Bibliotheken automatisch aufzulösen.
-Damit man an einem Endgerät in verschiedenen Projekten unterschiedliche Versionen einer gleichen Bibliothek haben kann,
+Damit man auf einem Endgerät in verschiedenen Projekten unterschiedliche Versionen einer gleichen Bibliothek haben kann,
 strukturiert Anaconda die zu einem Projekt gehörenden Bibliotheken standardmäßig in Umgebungen (eng. Environments).
 Für das Seminar erstellen wir die Umgebung
 \texttt{ml-potentials-and-risks}
@@ -150,13 +156,16 @@ Es steht Ihnen aber auf jeden Fall in der
 zur Verfügung.
 Auf
 \url{https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file}
-wird erläutert, wie eine existierende \texttt{environment.yml} eingelesen werden kann.
-Folgen Sie der Anleitung und erstellen Sie die benötigte Umgebung.
+wird erläutert, wie eine existierende \texttt{environment.yml} zur Erstellung einer Anaconda-Umgebung genutzt werden kann.
 
 \section{Start von JupyterLab}
 
 JupyterLab kann nun über den Anaconda Navigator gestartet werden.
 In Abbildung~\ref{fig:start-jupyterlab} ist dies abgebildet.
+\marginnote{%
+	Falls Sie Windows 10 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei \texttt{start-jupyterlab.bat} auf der Wurzelebene des Projekts durch einen Doppelklick ausführen.
+	Dann ist auch die Wurzelebene in JupyterLab der entsprechende Ordner.
+}
 Zunächst wird links im Menü
 (im Screenshot mit einer (1) markiert)
 \enquote{Home} ausgewählt.
@@ -173,7 +182,6 @@ Standardmäßig öffnet sich nun ein neuer Tab im Browser und JupyterLab zeigt z
   \caption{Aus dem Anaconda Navigator kann JupyterLab gleich in der richtigen Umgebung gestartet werden.}%
 \label{fig:start-jupyterlab}
 \end{figure}
-%TODO Tausche Conda-Umgebung in Abbildung aus.
 
 \section{Erste Schritte mit JupyterLab}
 
@@ -182,7 +190,11 @@ können Sie in JupyterLab zum Ordner
 \texttt{00-installationscheck}
 navigieren und dort das Jupyter Notebook (die Datei mit der Endung \texttt{.ipynb}) mit einem Doppelklick öffnen.
 Überprüfen Sie, ob Sie alle Zellen ausführen können.
-Falls es Fehlermeldungen gibt, melden Sie sich gerne vor Beginn de Veranstaltung per Mail bei der Seminarleitung.
+\marginnote{%
+	Wenn Sie nicht \texttt{start-jupyterlab.bat} zum Starten von JupyterLab verwendet haben, können Sie den Inhalt aus dem Ordner \texttt{.user-settings} nach \texttt{\%USERPROFILE\%\textbackslash{}.jupyter\textbackslash{}lab\textbackslash{}user-settings} kopieren, um die gleichen Voreinstellungen zu verwenden.
+	Falls Sie Apple oder Linux verwenden, ist dieser Pfad entsprechend \texttt{\textasciitilde/.jupyter/lab/user-settings}.
+}
+Falls es Fehlermeldungen gibt, melden Sie sich bitte vor Beginn der Veranstaltung per Mail bei der Seminarleitung.
 
 Bitte schauen Sie ebenfalls im Ordner
 \texttt{01-vorbereitende-materialien}
