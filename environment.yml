@@ -9,17 +9,11 @@ dependencies:
   - jupyterlab-spellchecker
   - nb_conda_kernels
   - jupyterlab-lsp
-  - autopep8
-  - pyflakes
-  - rope
-  - mccabe
-  - yapf
   - pylint
-  - pydocstyle
   - pip
   - git
   - pip:
-    - git+https://github.com/krassowski/python-language-server.git@main
+    - git+https://github.com/krassowski/python-language-server.git@main#egg=python-language-server[all]
 
   # Required libraries
   - numpy
