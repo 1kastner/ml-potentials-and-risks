@@ -4,9 +4,7 @@
 
 SETLOCAL EnableDelayedExpansion
 
-SET CONDA_ENV=ml-potentials-and-risks
-
-ECHO Update conda environment %CONDA_ENV%
+ECHO Update conda environment from local environment.yml file
 
 where conda 2> nul
 IF ERRORLEVEL 1 (
@@ -22,7 +20,7 @@ IF ERRORLEVEL 1 (
     CALL activate base
 )
 
-CALL conda env update --name %CONDA_ENV% --file environment.yml || (
+CALL conda env update --file environment.yml || (
     ECHO The update process encountered an error, please check
     PAUSE
     GOTO :EOF
