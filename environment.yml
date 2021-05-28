@@ -18,7 +18,7 @@ dependencies:
   # Required libraries
   - numpy
   - pandas
-  - xlrd
+  - openpyxl
   - matplotlib
   - folium
   - scikit-image
