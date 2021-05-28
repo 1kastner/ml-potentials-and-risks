@@ -30,7 +30,7 @@ Bibliotheken werden regelmäßig geupdatet und es kann irgendwann passieren, das
 Zur Sicherstellung, dass mithilfe eines Downgrades schnell eine funktionierende Version wiederhergestellt werden kann, werden regelmäßig folgende Kommandos ausgeführt:
 - `conda list --export > _working-library-versions/environment_pinned_versions.yml`
 - `conda list --explicit > _working-library-versions/spec-file.txt`
-- `pip freeze --local | Select-String -Pattern '^((?!file).)*$' > _working-library-versions/pip-requirements-debug.txt`
+- `pip freeze --local | Select-String -Pattern '^((?!file).)*$' > _working-library-versions/requirements.txt`
 Die Dateien befinden sich auf 
 
 ## Lizenz
