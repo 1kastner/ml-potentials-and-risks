@@ -29,3 +29,5 @@ _vorbereitung-fuer-den-workshop/Literaturreferenzen/
 *.log
 _vorbereitung-fuer-den-workshop/.backup/
 .virtual_documents/
+*.zip
+05-weiterfuehrende-beispiele/maschinelles-sehen/images/
