@@ -31,7 +31,8 @@ Zur Sicherstellung, dass mithilfe eines Downgrades schnell eine funktionierende 
 - `conda list --export > _working-library-versions/environment_pinned_versions.yml`
 - `conda list --explicit > _working-library-versions/spec-file.txt`
 - `pip freeze --local | Select-String -Pattern '^((?!file).)*$' > _working-library-versions/requirements.txt`
-Die Dateien befinden sich auf 
+
+Die Dateien befinden sich dann im Unterverzeichnis `./_working-library-versions` .
 
 ## Lizenz
 
