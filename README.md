@@ -24,7 +24,7 @@ Diese Webseite ist manchmal etwas langsam, weswegen eine lokale Installation zu 
 Die Materialien im Ordner `05 weiterfuehrende-beispiele` dienen nach Abschluss des Seminars zu einer vertieften Auseinandersetzung mit dem Thema.
 In den ersten Zellen des Jupyter Notebooks werden die zusätzlich benötigten Bibliotheken installiert.
 
-## Geprüfte Versionen
+## Geprüfte Bibliotheksversionen
 
 Bibliotheken werden regelmäßig geupdatet und es kann irgendwann passieren, dass die Jupyter Notebooks aus diesem Repo invaliden Code enthalten werden.
 Zur Sicherstellung, dass mithilfe eines Downgrades schnell eine funktionierende Version wiederhergestellt werden kann, werden regelmäßig folgende Kommandos ausgeführt:
