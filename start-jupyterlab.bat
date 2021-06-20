@@ -9,7 +9,7 @@ SET CONDA_ENV=ml-potentials-and-risks
 where conda 2> nul
 IF ERRORLEVEL 1 (
     ECHO Conda is not available in your PATH. Guessing the location of the installation...
-    CALL C:\Users\%USERNAME%\Anaconda3\Scripts\activate %CONDA_ENV% || (
+    CALL %USERPROFILE%\Anaconda3\Scripts\activate %CONDA_ENV% || (
         ECHO Either Conda or the environment was not found.
         PAUSE
     )
