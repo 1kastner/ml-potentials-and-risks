@@ -1,4 +1,4 @@
-# Machine Learning: Hype oder Hybris
+# Maschinelles Lernen: Potentiale und Risiken
 
 In diesem Repository wird das Arbeitsmaterial für das Seminar "Einführung ins Maschinelle Lernen: Hype oder Hybris" verwaltet.
 Sie sind in Vorträge und Selbstarbeitsphasen eingebettet, die den Aufgaben weiteren Kontext geben.
