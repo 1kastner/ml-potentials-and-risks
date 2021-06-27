@@ -1,6 +1,6 @@
 # Maschinelles Lernen: Potentiale und Risiken
 
-In diesem Repository wird das Arbeitsmaterial für das Seminar "aMschinelles Lernen: Potentiale und Risiken" verwaltet.
+In diesem Repository wird das Arbeitsmaterial für das Seminar "Maschinelles Lernen: Potentiale und Risiken" verwaltet.
 Sie sind in Vorträge und Selbstarbeitsphasen eingebettet, die den Aufgaben weiteren Kontext geben.
 
 ## Vorbereitung auf das Seminar
