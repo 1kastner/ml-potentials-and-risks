@@ -16,7 +16,7 @@ CALL conda activate !CONDA_ENV! || (
     GOTO :EOF
 )
 
-SET JUPYTERLAB_SETTINGS_DIR="%~dp0.user-settings"
+SET JUPYTERLAB_SETTINGS_DIR=.user-settings
 ECHO Loading settings for JupyterLab from '%JUPYTERLAB_SETTINGS_DIR%'
 
 REM Reset errorlevel to 0
