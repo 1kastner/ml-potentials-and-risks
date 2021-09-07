@@ -31,3 +31,5 @@ _vorbereitung-fuer-den-workshop/.backup/
 .virtual_documents/
 *.zip
 05-weiterfuehrende-beispiele/maschinelles-sehen/images/
+.idea/
+.conda-base.tmp
