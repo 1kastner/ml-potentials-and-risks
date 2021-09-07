@@ -5,6 +5,7 @@
 SETLOCAL EnableDelayedExpansion
 
 ECHO Update conda environment from local environment.yml file
+
 SET CONDA_ENV=ml-potentials-and-risks
 
 CALL :activate_conda_base
