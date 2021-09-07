@@ -6,7 +6,7 @@
 \usepackage[ngerman]{babel}   % neue deutsche Rechtschreibung (z. B. auch für Silbentrennung)
 \usepackage[htt]{hyphenat}  % Umbruch bei \texttt
 
-\title{Vorbereitung für das Seminar \enquote{Einführung ins Maschinelle Lernen: Hype oder Hybris?}}
+\title{Vorbereitung für das Seminar \enquote{Maschinelles Lernen: Potentiale und Risiken}}
 
 \author{Marvin Kastner \href{mailto:marvin.kastner@tuhh.de}{<marvin.kastner@tuhh.de>}}
 
@@ -32,7 +32,7 @@
 
 \begin{abstract}
 \noindent
-In diesem Dokument werden die Schritte aufgezählt, die von den Seminarteilnehmern selbständig \emph{vor} Beginn des Seminars auf dem eigenen Endgerät (PC, Laptop, Apple, ...) durchgeführt werden müssen.
+In diesem Dokument werden die Schritte aufgezählt, die von den Seminarteilnehmenden selbständig \emph{vor} Beginn des Seminars auf dem eigenen Endgerät (PC, Laptop, Apple, ...) durchgeführt werden müssen.
 Dies ist notwendig, weil zur Einrichtung der Arbeitsumgebung mehrere Gigabyte Daten heruntergeladen und verarbeitet werden müssen.
 Bitte planen Sie genügend Zeit hierfür ein.
 Falls Sie während des Seminars kein eigenes leistungsfähiges Endgerät (z.\,B. nur einen alten Laptop oder ein Tablet) zur Verfügung haben sollten, sprechen Sie bitte frühzeitig die Seminarleitung an.
@@ -59,19 +59,19 @@ Der Download-Bereich der Webseite sollte ungefähr wie in Abbildung\,\ref{fig:an
 
 Falls Sie auf Ihrem Endgerät zwei Accounts, einen Administrator- bzw.\ root-Account und einen Account fürs alltägliche Arbeiten, verwenden, seien Sie bitte vorsichtig.
 Die Installation von Anaconda erfordert keine erhöhten Rechte.
-Eine Installation mit einem Nutzer mit erhöhten Rechten (z.\,B. \emph{root} oder einem dedizierten Admin-Account unter Windows) kann u.\,U. dazu führen, dass Anaconda nur für diesen einen Nutzer mit erhöhten Rechten installiert ist bzw.\ dass es zu Problemen mit der Rechteverwaltung kommt.
+Eine Installation mit einem Nutzer mit erhöhten Rechten (z.\,B.\ \emph{root} oder einem dedizierten Admin-Account unter Windows) kann u.\,U. dazu führen, dass Anaconda nur für diesen einen Nutzer mit erhöhten Rechten installiert ist bzw.\ dass es zu Problemen mit der Rechteverwaltung kommt.
 In der Vergangenheit hat ein erneutes Installieren von Anaconda dieses Problem dann \emph{nicht} beheben können.
 Lösungen hierfür lassen sich unter \url{https://docs.anaconda.com/anaconda/install/multi-user/} finden. 
 
 Rufen Sie nach dem Download den Installer auf und folgen Sie den Installationsschritten.
-Konsultieren Sie im Fehlerfall offizielle Quellen des Herstellers (wie z.\,B. \url{https://docs.anaconda.com/anaconda/install/})
-oder Foren (wie z.\,B. \url{https://stackoverflow.com}).
+Konsultieren Sie im Fehlerfall offizielle Quellen des Herstellers (wie z.\,B.\ \url{https://docs.anaconda.com/anaconda/install/})
+oder Foren (wie z.\,B.\ \url{https://stackoverflow.com}).
 
 
 \newthought{Warum werden Jupyter Notebooks eingesetzt?}
 Im Bereich Maschinelles Lernen und Data Science spielen Jupyter Notebooks eine immer größere Rolle.
 Das Medienformat ist auf JSON-Basis und kann u.\,a.\
-Text (d.\,h. Plaintext, Markdown, LaTeX und HTML),
+Text (d.\,h.\ Plaintext, Markdown, LaTeX und HTML),
 Bilder und
 ausführbaren Code enthalten.
 So können die Arbeitsschritte für Dritte nachvollziehbar dokumentiert und die dazugehörigen Konzepte in einem Dokument zentral erklärt werden.
@@ -84,7 +84,7 @@ Klonen Sie das git-Repository
 \url{https://github.com/1kastner/machine-learning-hype-or-hybris},
 damit Sie die Seminar-Materialien lokal haben -- dies umfasst nur den Programmierteil des Seminars.
 Am einfachsten ist es, wenn Sie die Dateien lokal unterhalb des Ordners \texttt{Eigene Dateien} ablegen.
-Denn in diesem Ordner öffnet sich standardmäßig JupyterLab.
+Denn in diesem Ordner öffnet sich standardmäßig JupyterLab, wenn es über den Anaconda Navigator gestartet wird.
 Falls Sie noch nie mit git gearbeitet haben, lesen Sie bitte die nächsten Absätze.
 
 \newthought{Warum sollte ich git lernen?}
@@ -95,8 +95,8 @@ Wer lieber grafische Oberflächen mag, kann sich eine von vielen GUI-Clients%
 \sidenote{Eine Liste ist auf \url{https://git-scm.com/download/gui/win} zu finden.}
 aussuchen.
 Hier sollte neben dem Betriebssystem auch die ggf.\ kostenpflichtige Lizenz beachtet werden.
-Einige Lizenzen unterscheiden z.\,B. zwischen der privaten Verwendung und der Verwendung im Arbeitskontext.
-Bis zum Start des Seminars werden u.\,U. die Materialien noch überarbeitet oder erweitert.
+Einige Lizenzen unterscheiden z.\,B.\ zwischen der privaten Verwendung und der Verwendung im Arbeitskontext.
+Bis zum Start des Seminars werden u.\,U.\ die Materialien noch überarbeitet oder erweitert.
 Aktualisieren Sie also bitte regelmäßig Ihre vorliegende Version über ein \texttt{git pull} bzw.\ durch das Klicken auf den \enquote{Pull}-Button im GUI-Client Ihrer Wahl.
 
 \newthought{Ist es für das Seminar zwingend notwendig, git zu lernen?}
@@ -106,14 +106,14 @@ Falls Lernmaterialien später noch angepasst werden, müssen Sie diese dann alle
 
 \begin{marginfigure}
   \includegraphics{github-zip}
-  \caption{Ein GitHub-Repository bietet verschiedene Möglichkeiten zum Bezug der Inhalte an.}%
+  \caption{Ein GitHub-Repository bietet verschiedene Möglichkeiten zum Bezug der Inhalte an, auch den Download als ZIP.}%
 \label{fig:github}
 \end{marginfigure}
 
 
 \section{Installation der Bibliotheken}
 
-Mit der Installation von Anaconda ist u.\,a. die Applikation Anaconda Navigator ausgeliefert worden.
+Mit der Installation von Anaconda ist u.\,a.\ die Applikation Anaconda Navigator ausgeliefert worden.
 Mit dem Anaconda Navigator können die benötigten Bibliotheken automatisch installiert werden.
 \marginnote{%
 	Falls Sie Windows 10 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei \texttt{create-env.bat} auf der Wurzelebene des Projekts durch einen Doppelklick ausführen.
@@ -138,10 +138,10 @@ Das Erstellen der Umgebung nimmt für gewöhnlich mehrere Minuten in Anspruch.
 
 \newthought{Warum ist dieser Schritt notwendig?}
 Die Jupyter Notebooks, die Sie soeben von GitHub bezogen haben, benötigen eine bestimmte Umgebung, damit sie wie gewünscht geöffnet und ausgeführt werden können.
-Zu dieser Umgebung gehört z.\,B. ein Python-Interpreter mit einer bestimmten Python-Version ebenso wie eine Reihe ausgewählter Python-Bibliotheken.
+Zu dieser Umgebung gehört z.\,B.\ ein Python-Interpreter mit einer bestimmten Python-Version ebenso wie eine Reihe ausgewählter Python-Bibliotheken.
 Auf der obersten Ebene des git-Repositorys befindet sich die Datei \texttt{environment.yml}, in der alle Anforderungen an die Entwicklungsumgebung aufgeführt werden.
 Die Struktur der Datei \texttt{environment.yml} ist von Anaconda vorgegeben und erlaubt es, die Abhängigkeiten von Bibliotheken automatisch aufzulösen.
-Damit man auf einem Endgerät in verschiedenen Projekten unterschiedliche Versionen einer gleichen Bibliothek haben kann,
+Damit man auf einem Endgerät in verschiedenen Projekten unterschiedliche Versionen einer gleichen Bibliothek (und auch JupyterLab und andere Werkzeuge) haben kann,
 strukturiert Anaconda die zu einem Projekt gehörenden Bibliotheken standardmäßig in Umgebungen (eng. Environments).
 Für das Seminar erstellen wir die Umgebung
 \texttt{ml-potentials-and-risks}
@@ -197,15 +197,15 @@ navigieren und dort das Jupyter Notebook (die Datei mit der Endung \texttt{.ipyn
 Falls es Fehlermeldungen gibt, melden Sie sich bitte vor Beginn der Veranstaltung per Mail bei der Seminarleitung.
 
 Bitte schauen Sie ebenfalls im Ordner
-\texttt{01-vorbereitende-materialien}
+\texttt{01-einfuehrung-in-toolbox}
 um.
 Falls Sie noch keine Erfahrungen mit Python haben, arbeiten Sie bitte das Jupyter Notebook
-\texttt{01-einfuehrung-in-python.ipynb}
+\texttt{01 Einfuehrung in Python.ipynb}
 durch.
 Falls Ihnen das Format des Jupyter Notebooks noch unbekannt sind, schauen Sie sich bitte das Jupyter Notebook
-\texttt{02-funktionen-eines-jupyter-notebooks.ipynb}
+\texttt{02 Was kann ein Jupyter Notebook.ipynb}
 an.
-
+Falls Sie noch nicht mit der Anwendung JupyterLab gearbeitet haben, könnte das Jupyter Notebook \texttt{03 Tipps zu JupyterLab.ipynb} für Sie interessant sein.
 
 \begin{figure}[h]
   \includegraphics{jupyterlab-running}
