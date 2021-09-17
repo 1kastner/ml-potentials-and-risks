@@ -50,8 +50,9 @@ IF /I "!INSTALL_MAMBA!" == "Y" (
 
 REM Reset errorlevel to 0
 VERIFY > nul
-ECHO Start creating the environment '!CONDA_ENV!'
+ECHO Start creating the environment '!CONDA_ENV!' with the command '!MAMBA_OR_CONDA!'
 CALL %MAMBA_OR_CONDA% env create --file "%~dp0environment.yml"
+ECHO The environment '!CONDA_ENV!' has been created with the command '!MAMBA_OR_CONDA!'
 
 IF ERRORLEVEL 1 (
     REM We ended up here because the errorlevel equals 1 or greater, i.e. any type of error
