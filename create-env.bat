@@ -16,10 +16,11 @@ IF EXIST !CONDA_ENV_DIR!\ (
     ECHO The environment '!CONDA_ENV!' already exists, a creation is not possible! You might have invoked this script
     ECHO with two intentions:
     ECHO 1^) You want to re-create the environment '!CONDA_ENV!' from scratch. Then remove the environment first with
-    ECHO     the corresponding conda command, probably manually remove the folder !CONDA_ENV_DIR! and afterwards
-    ECHO     re-invoke this script.
+    ECHO    the corresponding conda command, probably manually remove the folder
+    ECHO    !CONDA_ENV_DIR! and afterwards re-invoke this script.
     ECHO 2^) You want to update the environment '!CONDA_ENV!'. Then please use the script 'update_env.bat' located
-    ECHO     in the same directory.
+    ECHO    in the same directory.
+    ECHO Conda creation process aborted.
     PAUSE
     GOTO :EOF
 ) ELSE (
