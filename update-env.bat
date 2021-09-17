@@ -4,14 +4,14 @@
 
 SETLOCAL EnableDelayedExpansion
 
-ECHO Update conda environment from local environment.yml file
+ECHO Update conda environment from local environment.yml file.
 
 SET CONDA_ENV=ml-potentials-and-risks
 
 CALL :activate_conda_base
 
 CALL conda env update --file "%~dp0environment.yml" || (
-    ECHO The update process encountered an error, please check the output
+    ECHO The update process encountered an error, please check the output.
     PAUSE
     GOTO :EOF
 )
@@ -50,7 +50,7 @@ REM
     ECHO might fail. It is usually preferred if a user-specific installation (i.e. in a folder below %USERPROFILE%)
     ECHO would have been used instead.
     SET CONDASCRIPTS=C:\ProgramData\Anaconda3\Scripts\
-    ECHO Checking for conda installation at !CONDASCRIPTS!
+    ECHO Checking for conda installation at !CONDASCRIPTS!...
     IF EXIST %CONDASCRIPTS% (
         GOTO CONDA_FOUND
     )
@@ -71,7 +71,7 @@ REM
     ECHO The conda commands from this directory are used in the following.
 
     CALL !CONDASCRIPTS!activate base && (
-        ECHO The base environment has been activated successfully!
+        ECHO The base environment has been activated successfully.
     ) || (
         ECHO The base environment could not be activated. Please check the output for hints.
         PAUSE
