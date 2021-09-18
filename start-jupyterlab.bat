@@ -85,7 +85,7 @@ REM
     ECHO The conda commands from this directory are used in the following.
 
     CALL !CONDASCRIPTS!activate base && (
-        ECHO The base environment has been activated successfully!
+        ECHO The base environment has been activated successfully.
     ) || (
         ECHO The base environment could not be activated. Please check the output for hints.
         PAUSE
