@@ -23,6 +23,5 @@ dependencies:
   - pandas
   - openpyxl
   - matplotlib
-  - folium
   - scikit-image
   - scikit-learn
