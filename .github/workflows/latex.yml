@@ -11,6 +11,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -bibtex-
           working_directory: ./_internal
           root_file: Vorbereitung-auf-das-Seminar.tex
 
