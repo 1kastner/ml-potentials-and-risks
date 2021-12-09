@@ -1,3 +1,5 @@
+[![Windows conda installation](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/conda-installation.yaml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/conda-installation.yaml)
+
 # Maschinelles Lernen: Potentiale und Risiken
 
 In diesem Repository wird das Arbeitsmaterial für das Seminar "Maschinelles Lernen: Potentiale und Risiken" verwaltet.
