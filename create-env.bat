@@ -78,10 +78,13 @@ REM
     REM Reset errorlevel to 0
     VERIFY > nul
 
-    CALL conda --info REM >nul 2>nul
+    CALL conda info 1>nul 2>nul
     IF NOT ERRORLEVEL 1 (
         where conda > .conda_path
         SET /p CONDA_PATH= < .conda_path
+		SET CONDA_PATH=!CONDA_PATH:Library\bin=Scripts!
+		SET CONDA_PATH=!CONDA_PATH:conda.bat=!
+		SET CONDA_PATH=!CONDA_PATH:conda.exe=!
         ECHO A conda installation located in !CONDA_PATH! is available in your PATH variable and is thus used.
         SET CONDASCRIPTS=!CONDA_PATH!
         GOTO CONDA_FOUND
@@ -108,6 +111,26 @@ REM
         GOTO CONDA_FOUND
     )
     SET CONDASCRIPTS=C:\ProgramData\Miniconda3\Scripts\
+    ECHO Checking for conda installation at !CONDASCRIPTS!
+    IF EXIST %CONDASCRIPTS% (
+        GOTO CONDA_FOUND
+    )
+    SET CONDASCRIPTS=C:\Anaconda3\Scripts\
+    ECHO Checking for conda installation at !CONDASCRIPTS!
+    IF EXIST %CONDASCRIPTS% (
+        GOTO CONDA_FOUND
+    )
+    SET CONDASCRIPTS=C:\Miniconda3\Scripts\
+    ECHO Checking for conda installation at !CONDASCRIPTS!
+    IF EXIST %CONDASCRIPTS% (
+        GOTO CONDA_FOUND
+    )
+    SET CONDASCRIPTS=C:\Anaconda\Scripts\
+    ECHO Checking for conda installation at !CONDASCRIPTS!
+    IF EXIST %CONDASCRIPTS% (
+        GOTO CONDA_FOUND
+    )
+    SET CONDASCRIPTS=C:\Miniconda\Scripts\
     ECHO Checking for conda installation at !CONDASCRIPTS!
     IF EXIST %CONDASCRIPTS% (
         GOTO CONDA_FOUND
