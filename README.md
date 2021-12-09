@@ -1,4 +1,5 @@
 [![Windows conda installation](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/conda-installation.yaml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/conda-installation.yaml)
+[![Build LaTeX document](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/latex.yml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/latex.yml)
 
 # Maschinelles Lernen: Potentiale und Risiken
 
