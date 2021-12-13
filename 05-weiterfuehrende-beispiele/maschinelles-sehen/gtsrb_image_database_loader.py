@@ -11,15 +11,15 @@ import pandas as pd
 
 def load_traffic_sign_database(path_to_directory):
     """
-
-    :param path_to_directory: Points to the root directory of the traffic sign folder structure (including the Readme.md)
+    :param path_to_directory: Points to the root directory of the traffic sign folder structure (including the
+        Readme.md)
     :return: DataFrame containing the paths to all images
     """
     traffic_sign_class_dfs = []
-    
+
     if not os.path.exists(path_to_directory):
         raise Exception("The following path does not exist: '{p}'".format(p=path_to_directory))
-                            
+
     for traffic_sign_class in log_progress(os.listdir(path_to_directory)):
         if os.path.isfile(os.path.join(path_to_directory, traffic_sign_class)):
             continue  # e.g. the readme file
@@ -29,8 +29,7 @@ def load_traffic_sign_database(path_to_directory):
             raise Exception("The following file does not exist: '{p}'".format(p=path_to_meta_info_file))
         df = pd.read_csv(path_to_meta_info_file, delimiter=";")
         df.columns = [col.replace(".", "_") for col in df.columns]
-        images = []
-        images = df.Filename.apply(lambda file_name : os.path.join(os.path.dirname(path_to_meta_info_file), file_name))
+        images = df.Filename.apply(lambda file_name: os.path.join(os.path.dirname(path_to_meta_info_file), file_name))
         df = df.assign(path_to_image=images)
         traffic_sign_class_dfs.append(df)
 
@@ -40,7 +39,6 @@ def load_traffic_sign_database(path_to_directory):
 def log_progress(sequence, every=None, size=None, name='Items'):
     """
     taken from https://github.com/alexanderkuk/log-progress
-    
     """
     from ipywidgets import IntProgress, HTML, VBox
     from IPython.display import display

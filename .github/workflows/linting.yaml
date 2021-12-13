@@ -1,0 +1,29 @@
+name: Linting
+
+on:
+  push:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Linting the code
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install linting features
+      run: |
+        pip install flake8_nb
+
+    - name: Run linting
+      run: |
+        flake8_nb
