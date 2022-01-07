@@ -22,8 +22,8 @@ jobs:
 
     - name: Install linting features
       run: |
-        pip install flake8_nb
+        pip install flake8 flake8_nb
 
     - name: Run linting
       run: |
-        flake8_nb
+        flake8 && flake8_nb
