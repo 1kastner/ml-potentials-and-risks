@@ -1,16 +1,16 @@
 [flake8_nb]
+
 exclude =
-    .git,
-    **/__pycache__,
-    **/.ipynb_checkpoints,
-    **/.virtual_documents
+    *.git/*
+    *venv/*
+    *.ipynb_checkpoints/*
+    *.virtual_documents/*
+
 max-line-length = 120
 
 ignore =
-    E402,
-    # Variables such as 'In' or 'display' are not detected and variables of imported Jupyter Notebook cannot be detected
-    F821
+    E402,  # Module level import not at top of file
+    F821  # Variables such as 'In' or 'display' are not detected and variables of imported Jupyter Notebook cannot be detected
 
 per-file-ignores =
     01-einfuehrung-in-toolbox\01 einfuehrung in python.ipynb: F403, F405
-    05-weiterfuehrende-beispiele/maschinelles-sehen/gtsrb_image_database_loader.py: E722
