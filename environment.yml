@@ -25,3 +25,5 @@ dependencies:
   - matplotlib
   - scikit-image
   - scikit-learn
+  - ipywidgets
+  - tqdm

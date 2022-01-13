@@ -1,0 +1,18 @@
+[flake8]
+
+exclude =
+    *.git/*,
+    *venv/*,
+    *__pycache__/*,
+    *.ipynb_checkpoints/*,
+    *.virtual_documents/*
+
+max-line-length = 120
+
+ignore =
+    E402,  # Module level import not at top of file
+    F821  # Variables such as 'In' or 'display' are not detected and variables of imported Jupyter Notebook cannot be detected
+
+# E722 - Do not use bare except
+per-file-ignores =
+    05-weiterfuehrende-beispiele/maschinelles-sehen/gtsrb_image_database_loader.py: E722

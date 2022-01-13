@@ -1,0 +1,21 @@
+[flake8_nb]
+
+exclude =
+    *.git*
+    *venv*
+    *.ipynb_checkpoints*
+    *.virtual_documents*
+    *.py
+
+max-line-length = 120
+
+ignore =
+    E402  # Module level import not at top of file
+    F821  # Variables such as 'In' or 'display' are not detected and variables of imported Jupyter Notebook cannot be detected
+    E501  # Allow long lines
+    E114  # Indentation of a comment does not need to be a multiple of 4
+    E116  # Indentation of a comment is allowed to be "unexpected"
+    W503  # Long lines need to be broken somewhere and otherwise W504 is violated
+
+per-file-ignores =
+    *01-Einfuehrung-in-Python.ipynb*: F403, F405, E116, E731
