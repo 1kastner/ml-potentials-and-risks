@@ -35,7 +35,7 @@ def load_traffic_sign_database(path_to_directory: str) -> pd.DataFrame:
         df = pd.read_csv(path_to_meta_info_file, delimiter=";")
         df.columns = [col.replace(".", "_") for col in df.columns]
         images = []
-        images = df.Filename.apply(lambda file_name : os.path.join(os.path.dirname(path_to_meta_info_file), file_name))
+        images = df.Filename.apply(lambda file_name: os.path.join(os.path.dirname(path_to_meta_info_file), file_name))
         df = df.assign(path_to_image=images)
         traffic_sign_class_dfs.append(df)
 
@@ -91,7 +91,7 @@ def log_progress(sequence, every=None, size=None, name='Items'):
                         size=size
                     )
             yield record
-    except:
+    except:  # noqa: E722
         progress.bar_style = 'danger'
         raise
     else:
