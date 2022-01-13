@@ -26,3 +26,4 @@ dependencies:
   - scikit-image
   - scikit-learn
   - ipywidgets
+  - tqdm
