@@ -33,7 +33,7 @@
 \begin{abstract}
 \noindent
 In diesem Dokument werden die Schritte aufgezählt, die von den Seminarteilnehmenden selbständig \emph{vor} Beginn des Seminars auf dem eigenen Endgerät (PC, Laptop, Apple, ...) durchgeführt werden müssen.
-Dies ist notwendig, weil zur Einrichtung der Arbeitsumgebung mehrere Gigabyte Daten heruntergeladen und verarbeitet werden müssen.
+Dies ist notwendig, weil zur Einrichtung der Arbeitsumgebung große Datenmengen heruntergeladen und verarbeitet werden müssen.
 Bitte planen Sie genügend Zeit hierfür ein.
 Falls Sie während des Seminars kein eigenes leistungsfähiges Endgerät (z.\,B. nur einen alten Laptop oder ein Tablet) zur Verfügung haben sollten, sprechen Sie bitte frühzeitig die Seminarleitung an.
 \end{abstract}
@@ -83,13 +83,14 @@ So können die Arbeitsschritte für Dritte nachvollziehbar dokumentiert und die 
 Klonen Sie das git-Repository
 \url{https://github.com/1kastner/ml-potentials-and-risks},
 damit Sie die Seminar-Materialien lokal haben -- dies umfasst nur den Programmierteil des Seminars.
-Am einfachsten ist es, wenn Sie die Dateien lokal unterhalb des Ordners \texttt{Eigene Dateien} ablegen.
-Denn in diesem Ordner öffnet sich standardmäßig JupyterLab, wenn es über den Anaconda Navigator gestartet wird.
+Am einfachsten ist es, wenn Sie die Dateien lokal unterhalb des benutzer\-eigenen Ordners \texttt{Dokumente} ablegen
+(unter Windows typischerweise \texttt{C:\textbackslash{}Users\textbackslash{}BENUTZERNAME\textbackslash{}Documents}.
+Denn dieser Ordner ist, wenn JupyterLab startet, direkt verfügbar.
 Falls Sie noch nie mit git gearbeitet haben, lesen Sie bitte die nächsten Absätze.
 
 \newthought{Warum sollte ich git lernen?}
 Für die Versionsverwaltung ist git quasi der Standard und wird immer häufiger auch außerhalb der Software-Entwicklung, aus der git ursprünglich stammt, eingesetzt.
-Deswegen lohnt es sich für (fast) jeden, sich Fähigkeiten mit diesem Tool anzueignen.
+Deswegen lohnt es sich für (fast) alle, sich Fähigkeiten mit diesem Tool anzueignen.
 Es ist als ein Kommandozeilentool entwickelt worden, welches über \url{https://git-scm.com/} heruntergeladen werden kann.
 Wer lieber grafische Oberflächen mag, kann sich eine von vielen GUI-Clients%
 \sidenote{Eine Liste ist auf \url{https://git-scm.com/download/gui/win} zu finden.}
@@ -175,7 +176,8 @@ ausgewählt werden
 (mit einer (2) markiert).
 Danach startet ein Klick auf \texttt{Launch} die Anwendung JupyterLab im Browser
 (mit einer (3) markiert).
-Standardmäßig öffnet sich nun ein neuer Tab im Browser und JupyterLab zeigt zunächst den Inhalt vom Ordner \texttt{Eigene Dateien} an.
+Standardmäßig öffnet sich nun ein neuer Tab im Browser und JupyterLab zeigt zunächst den Inhalt vom Benutzer-Ordner an (unter Windows typischerweise \texttt{C:\textbackslash{}Users\textbackslash{}BENUTZERNAME}).
+Von hier können Sie in den Unterordner \texttt{Dokumente} navigieren und zu den heruntergeladenen Seminarunterlagen gelangen.
 
 \begin{figure}[h]
   \includegraphics{anaconda-navigator-jupyterlab--mit-reihenfolge}
@@ -200,16 +202,16 @@ Bitte schauen Sie ebenfalls im Ordner
 \texttt{01-einfuehrung-in-toolbox}
 um.
 Falls Sie noch keine Erfahrungen mit Python haben, arbeiten Sie bitte das Jupyter Notebook
-\texttt{01 Einfuehrung in Python.ipynb}
+\texttt{01-Einfuehrung-in-Python.ipynb}
 durch.
 Falls Ihnen das Format des Jupyter Notebooks noch unbekannt sind, schauen Sie sich bitte das Jupyter Notebook
-\texttt{02 Was kann ein Jupyter Notebook.ipynb}
+\texttt{02-Was-kann-ein-Jupyter-Notebook.ipynb}
 an.
-Falls Sie noch nicht mit der Anwendung JupyterLab gearbeitet haben, könnte das Jupyter Notebook \texttt{03 Tipps zu JupyterLab.ipynb} für Sie interessant sein.
+Falls Sie noch nicht mit der Anwendung JupyterLab gearbeitet haben, könnte das Jupyter Notebook \texttt{03-Tipps-zu-JupyterLab.ipynb} für Sie interessant sein.
 
 \begin{figure}[h]
   \includegraphics{jupyterlab-running}
-  \caption{In JupyterLab können links alle Dateien und Ordner aus dem Ordner \emph{Eigene Dateien} betrachtet werden.}%
+  \caption{In JupyterLab können links alle Dateien und Ordner aus dem Benutzerordner betrachtet werden.}%
 \label{fig:start-jupyterlab}
 \end{figure}
 
