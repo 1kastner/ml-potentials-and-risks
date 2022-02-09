@@ -30,30 +30,11 @@ IF EXIST !CONDA_ENV_DIR!\ (
 ECHO Showing information regarding the retrieved conda instance...
 CALL conda info
 
-ECHO You have the chance to enable multi-threaded downloading by additionally installing mamba from
-ECHO https://github.com/mamba-org/mamba. This is only advised if you have an up-to-date and properly working
-ECHO conda base environment. If you have inconsistency issues, please skip this step.
-set /p "INSTALL_MAMBA=Do you want to install mamba in your conda base environment [Y/N]? "
-
-IF /I "!INSTALL_MAMBA!" == "Y" (
-    ECHO You have chosen to install mamba.
-    ECHO Install mamba for parallel downloading during environment creation...
-    CALL conda install mamba -n base -c conda-forge
-
-    ECHO Showing information regarding the retrieved mamba instance...
-    CALL mamba info
-
-    SET MAMBA_OR_CONDA=mamba
-) ELSE (
-    ECHO You have not typed "Y", thus this installation stays with conda as the default installer.
-    SET MAMBA_OR_CONDA=conda
-)
-
 REM Reset errorlevel to 0
 VERIFY > nul
-ECHO Start creating the environment '!CONDA_ENV!' with the command '!MAMBA_OR_CONDA!'
-CALL %MAMBA_OR_CONDA% env create --file "%~dp0environment.yml"
-ECHO The environment '!CONDA_ENV!' has been created with the command '!MAMBA_OR_CONDA!'
+ECHO Start creating the environment '!CONDA_ENV!'
+CALL conda env create --file "%~dp0environment.yml"
+ECHO The environment '!CONDA_ENV!' has been created
 
 IF ERRORLEVEL 1 (
     REM We ended up here because the errorlevel equals 1 or greater, i.e. any type of error

@@ -16,6 +16,9 @@ CALL conda env update --file "%~dp0environment.yml" || (
     GOTO :EOF
 )
 
+ECHO The update process has finished
+GOTO :EOF
+
 REM
 REM The boilerplate code to activate conda base
 REM
