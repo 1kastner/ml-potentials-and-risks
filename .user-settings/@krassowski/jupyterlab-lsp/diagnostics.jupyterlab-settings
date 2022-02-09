@@ -15,6 +15,7 @@
     // Regular expressions matching messages of diagnostics which should not be shown in the panel nor highlighted in the editor.
     "ignoreMessagesPatterns": [
         "undefined name 'In'",
-        "undefined name 'display'"
+        "undefined name 'display'",
+        "undefined name 'df'"
     ]
 }
