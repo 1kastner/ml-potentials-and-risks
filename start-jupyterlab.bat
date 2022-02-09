@@ -22,13 +22,13 @@ ECHO Loading settings for JupyterLab from '%JUPYTERLAB_SETTINGS_DIR%'
 REM Reset errorlevel to 0
 VERIFY > nul
 
-CALL jupyter lab
+CALL python -m jupyterlab
 IF ERRORLEVEL 1 (
     ECHO JupyterLab encountered an error, please check the error messages above
     PAUSE
-    GOTO :EOF
 )
 
+GOTO :EOF
 
 REM
 REM The boilerplate code to activate conda base
