@@ -2,9 +2,11 @@ name: Windows conda installation (conda in PATH)
 
 on:
   push:
+    branches:
+    - master
   pull_request:
     branches:
-      - master
+    - master
 
 jobs:
   build:

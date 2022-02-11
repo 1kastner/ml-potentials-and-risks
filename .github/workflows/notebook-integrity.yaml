@@ -1,0 +1,36 @@
+name: Document integrity checks
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    name: Checking the integrity
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Update Ubuntu and install pandoc
+      run: |
+        sudo apt-get update && sudo apt-get upgrade && sudo apt-get install pandoc
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install linting features
+      run: |
+        pip install sphinx nbsphinx ipython
+
+    - name: Run checks
+      run: |
+        python -m sphinx -W --keep-going ./ ./.sphinx/_build/ \
+        && python -m sphinx -W --keep-going -b linkcheck ./ ./.sphinx/_build/
