@@ -1,0 +1,30 @@
+name: Linting
+
+on:
+  push:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Checking the integrity
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install linting features
+      run: |
+        pip install sphinx nbsphinx
+
+    - name: Run checks
+      run: |
+        python -m sphinx ./ ./.sphinx/_build/ \
+        && python -m sphinx -b linkcheck ./ ./.sphinx/_build/
