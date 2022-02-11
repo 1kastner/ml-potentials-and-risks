@@ -1,6 +1,7 @@
 # Jupyter Notebook
 .ipynb_checkpoints
 __pycache__
+.virtual_documents/
 
 # Environments
 .env
@@ -16,27 +17,28 @@ venv/
 *.blg
 *.synctex(busy)
 *.synctex.gz
+*.log
 _internal/**.pdf
 
-# Databases
+# Data sources and keys
 **/.data-preprocessing/
 **/autos.csv
 **/spam.csv
-**/app_token.txt
-
-# Literature
-_vorbereitung-fuer-den-workshop/Literaturreferenzen/
-*.log
-_vorbereitung-fuer-den-workshop/.backup/
-.virtual_documents/
+**/.app_token.txt
+**/GTSRB_Final_Training_Images/
 *.zip
-05-weiterfuehrende-beispiele/maschinelles-sehen/images/
+*.xlsx
+**/i4gi-tjb9/
+
+# PDF resources
+_vorbereitung-fuer-den-workshop/Literaturreferenzen/
+_vorbereitung-fuer-den-workshop/.backup/
+_internal/graphics/nummeriere Bilder.pptx
+
+# Installation and Development
 .idea/
 .conda-base.tmp
-_internal/graphics/nummeriere Bilder.pptx
 .conda_path
-05-weiterfuehrende-beispiele/maschinelles-sehen/GTSRB_Final_Training_Images/
-05-weiterfuehrende-beispiele/raumzeitliche-datenanalyse/i4gi-tjb9/
-*/.app_token.txt
-*.xlsx
+
+# Sphinx for integrity checks
 .sphinx/_build/
