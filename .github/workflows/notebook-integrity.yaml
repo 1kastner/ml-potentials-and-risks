@@ -26,9 +26,9 @@ jobs:
 
     - name: Install linting features
       run: |
-        pip install sphinx nbsphinx
+        pip install sphinx nbsphinx ipython
 
     - name: Run checks
       run: |
-        python -m sphinx ./ ./.sphinx/_build/ \
-        && python -m sphinx -b linkcheck ./ ./.sphinx/_build/
+        python -m sphinx -W --keep-going ./ ./.sphinx/_build/ \
+        && python -m sphinx -W --keep-going -b linkcheck ./ ./.sphinx/_build/
