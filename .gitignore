@@ -39,3 +39,4 @@ _internal/graphics/nummeriere Bilder.pptx
 05-weiterfuehrende-beispiele/raumzeitliche-datenanalyse/i4gi-tjb9/
 */.app_token.txt
 *.xlsx
+.sphinx/_build/
