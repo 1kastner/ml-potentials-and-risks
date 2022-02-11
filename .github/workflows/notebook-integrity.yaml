@@ -2,9 +2,11 @@ name: Document integrity checks
 
 on:
   push:
+    branches:
+    - master
   pull_request:
     branches:
-      - master
+    - master
 
 jobs:
   build:
