@@ -7,7 +7,6 @@ dependencies:
   # Development Experience
   - jupyterlab=3
   - jupyterlab-spellchecker
-  - nb_conda_kernels
   - jupyterlab-lsp
   - python-lsp-server
   - watermark
