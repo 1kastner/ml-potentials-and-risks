@@ -28,7 +28,7 @@ jobs:
 
     - name: Install linting features
       run: |
-        pip install sphinx nbsphinx ipython ipykernel
+        pip install -r ../../.sphinx/requirements.txt
 
     - name: Run checks
       run: |
