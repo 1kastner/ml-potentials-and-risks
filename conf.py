@@ -23,6 +23,9 @@ project_copyright = f'{current_year}, {author}'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+
+root_doc = ".index"
+
 extensions = [
     'nbsphinx'
 ]
