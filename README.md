@@ -2,8 +2,8 @@
 [![Windows conda installation (conda not in PATH)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/conda-installation-not-in-path.yaml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/conda-installation-not-in-path.yaml)
 [![Build LaTeX document](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/latex.yaml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/latex.yaml)
 [![Document integrity checks](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/notebook-integrity.yaml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/notebook-integrity.yaml)
-[Sphinx preview](https://ml-potentials-and-risks.readthedocs.io/de/latest/)
-[Binder preview](https://mybinder.org/v2/gh/1kastner/ml-potentials-and-risks/master)
+[![Sphinx preview](https://img.shields.io/badge/Sphinx-yes-green.svg)](https://ml-potentials-and-risks.readthedocs.io/de/latest/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/1kastner/ml-potentials-and-risks/master/HEAD)
 
 # Maschinelles Lernen: Potentiale und Risiken
 
