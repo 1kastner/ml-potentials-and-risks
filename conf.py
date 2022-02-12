@@ -77,5 +77,8 @@ linkcheck_ignore = [
 ]
 
 # check manually for the meantime
-response = requests.get("https://dev.socrata.com/docs/app-tokens.html", verify=False)
-response.raise_for_status()
+try:
+    response = requests.get("https://dev.socrata.com/docs/app-tokens.html", verify=True)
+except requests.exceptions.SSLError:
+    response = requests.get("https://dev.socrata.com/docs/app-tokens.html", verify=False)
+    response.raise_for_status()
