@@ -24,8 +24,6 @@ project_copyright = f'{current_year}, {author}'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 
-root_doc = ".index"
-
 extensions = [
     'nbsphinx'
 ]
