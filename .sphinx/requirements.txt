@@ -2,3 +2,11 @@ sphinx
 nbsphinx
 ipython
 ipykernel
+numpy
+pandas
+openpyxl
+matplotlib
+scikit-image
+scikit-learn
+ipywidgets
+tqdm

@@ -21,7 +21,3 @@ dependencies:
   - scikit-learn
   - ipywidgets
   - tqdm
-
-  # Building the docs
-  - sphinx
-  - nbsphinx
