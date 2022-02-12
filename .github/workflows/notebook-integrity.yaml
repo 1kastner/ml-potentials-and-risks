@@ -28,7 +28,7 @@ jobs:
 
     - name: Install linting features
       run: |
-        pip install -r ../../.sphinx/requirements.txt
+        pip install -r .sphinx/requirements.txt
 
     - name: Run checks
       run: |
