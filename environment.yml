@@ -13,7 +13,7 @@ dependencies:
   - pyls-flake8
 
   # Required libraries
-  - numpy
+  - numpy>=1.16.5, <1.23.0
   - pandas
   - openpyxl
   - matplotlib
