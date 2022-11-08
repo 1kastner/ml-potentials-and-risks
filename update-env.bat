@@ -96,7 +96,7 @@ REM
     ECHO The scripts folder at !CONDASCRIPTS! has been detected as a valid conda installation.
     ECHO The conda commands from this directory are used in the following.
 
-    CALL !CONDASCRIPTS!activate base && (
+    CALL !CONDASCRIPTS!activate.bat base && (
         ECHO The base environment has been activated successfully.
     ) || (
         ECHO The base environment could not be activated. Please check the output for hints.
