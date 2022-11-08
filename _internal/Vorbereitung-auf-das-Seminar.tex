@@ -107,7 +107,7 @@ Falls Lernmaterialien später noch angepasst werden, müssen Sie diese dann alle
 
 \begin{marginfigure}
   \includegraphics{github-zip}
-  \caption{Ein GitHub-Repository bietet verschiedene Möglichkeiten zum Bezug der Inhalte an, auch den Download als ZIP.}%
+  \caption{Ein GitHub-Repository bietet verschiedene Möglichkeiten zum Bezug der Inhalte an, auch den Download als ZIP-Datei.}%
 \label{fig:github}
 \end{marginfigure}
 
@@ -119,17 +119,22 @@ Mit dem Anaconda Navigator können die benötigten Bibliotheken automatisch inst
 \marginnote{%
 	Falls Sie Windows 10 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei \texttt{create-env.bat} auf der Wurzelebene des Projekts durch einen Doppelklick ausführen.
 }
-In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import} (im Screenshot mit einer (1) markiert).
+In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import}
+(im Screenshot mit einer 1 markiert).
 Klicken Sie diesen an.
-Damit öffnet sich das Fenster \enquote{Import new environment}.
+Damit öffnet sich das Fenster \enquote{Import environment}.
 Klicken Sie hier auf den Ordner in der Zeile, die mit 
-\enquote{Specification File}
-beginnt (mit einer (2) markiert).
-Danach öffnet sich ein Fenster (mit einer (3) markiert), in dem Sie dann zu den von GitHub bezogenen Dateien navigieren können.
+\enquote{Local drive}
+bezeichnet wird (mit einer 2 markiert).
+Danach öffnet sich ein Fenster zur Datei-Auswahl
+(mit einer 3 markiert),
+in dem Sie dann zu den von GitHub bezogenen Dateien navigieren können.
 Wählen Sie die Datei \texttt{environment.yml} aus
 -- sie liegt auf der Wurzelebene des Projektordners --
 und klicken Sie auf \enquote{Öffnen}.
-Das Erstellen der Umgebung nimmt für gewöhnlich mehrere Minuten in Anspruch.
+Der zu erstellenden Umgebung können Sie nun einen sprechenden Namen geben, z.\,B.\ \texttt{ml-potentials-and-risks}.
+Unter diesem Namen werden Sie die Umgebung später in Anaconda wiederfinden.
+Das Erstellen der Umgebung beinhaltet den Download und die Installation der benötigten Bibliotheken; es nimmt für gewöhnlich mehrere Minuten in Anspruch.
 
 \begin{figure}[h]
   \includegraphics{anaconda-navigator-import-new-environment--mit-reihenfolge}
@@ -168,26 +173,27 @@ In Abbildung~\ref{fig:start-jupyterlab} ist dies abgebildet.
 	Dann ist auch die Wurzelebene in JupyterLab der entsprechende Ordner.
 }
 Zunächst wird links im Menü
-(im Screenshot mit einer (1) markiert)
+(im Screenshot mit einer 1 markiert)
 \enquote{Home} ausgewählt.
 Im zweiten Schritt muss die Umgebung
 \texttt{ml-potentials-and-risks}
 ausgewählt werden
-(mit einer (2) markiert).
+(mit einer 2 markiert).
 Danach startet ein Klick auf \texttt{Launch} die Anwendung JupyterLab im Browser
-(mit einer (3) markiert).
+(mit einer 3 markiert).
 Standardmäßig öffnet sich nun ein neuer Tab im Browser und JupyterLab zeigt zunächst den Inhalt vom Benutzer-Ordner an (unter Windows typischerweise \texttt{C:\textbackslash{}Users\textbackslash{}BENUTZERNAME}).
 Von hier können Sie in den Unterordner \texttt{Dokumente} navigieren und zu den heruntergeladenen Seminarunterlagen gelangen.
 
 \begin{figure}[h]
   \includegraphics{anaconda-navigator-jupyterlab--mit-reihenfolge}
-  \caption{Aus dem Anaconda Navigator kann JupyterLab gleich in der richtigen Umgebung gestartet werden.}%
+  \caption{Aus dem Anaconda Navigator kann JupyterLab gleich in der richtigen Umgebung gestartet werden.%
+  Die Reihenfolge und Sortierung der Logos kann variieren.}%
 \label{fig:start-jupyterlab}
 \end{figure}
 
 \section{Erste Schritte mit JupyterLab}
 
-Wenn Sie die Seminar-Materialien wie unter Abschnitt \enquote{\nameref{sec:git-clone}} angegeben unterhalb des Ordners \texttt{Eigene Dateien} abgelegt haben, 
+Wenn Sie die Seminar-Materialien wie unter Abschnitt \enquote{\nameref{sec:git-clone}} angegeben abgelegt haben, 
 können Sie in JupyterLab zum Ordner 
 \texttt{00-installationscheck}
 navigieren und dort das Jupyter Notebook (die Datei mit der Endung \texttt{.ipynb}) mit einem Doppelklick öffnen.
