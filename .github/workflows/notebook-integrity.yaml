@@ -26,7 +26,7 @@ jobs:
       with:
         python-version: 3.9
 
-    - name: Install linting features
+    - name: Install required Sphinx functionality
       run: |
         pip install -r .sphinx/requirements.txt
 
