@@ -14,17 +14,17 @@ jobs:
     steps:
 
       - name: Set up Git repository
-        uses: actions/checkout
+        uses: actions/checkout@4
 
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action3
         with:
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -bibtex-
           working_directory: ./_internal
           root_file: Vorbereitung-auf-das-Seminar.tex
 
       - name: Upload LaTeX document
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: PDF
           path: ./_internal/Vorbereitung-auf-das-Seminar.pdf

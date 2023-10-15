@@ -16,7 +16,7 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout
+    - uses: actions/checkout@4
 
     - name: Install miniconda
       run: |

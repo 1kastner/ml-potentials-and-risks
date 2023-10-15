@@ -15,7 +15,7 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout
+    - uses: actions/checkout@4
 
     - uses: conda-incubator/setup-miniconda@v2
       with:
