@@ -3,7 +3,7 @@
 [![Build LaTeX document](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/latex.yaml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/latex.yaml)
 [![Document integrity checks](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/notebook-integrity.yaml/badge.svg)](https://github.com/1kastner/ml-potentials-and-risks/actions/workflows/notebook-integrity.yaml)
 [![Sphinx preview](https://img.shields.io/badge/SphinxPreview-yes-green.svg)](https://ml-potentials-and-risks.readthedocs.io/de/latest/)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/1kastner/ml-potentials-and-risks.git/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/1kastner/ml-potentials-and-risks.git/using-python-3-11)
 
 # Maschinelles Lernen: Potentiale und Risiken
 
