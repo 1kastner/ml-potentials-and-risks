@@ -2,7 +2,7 @@ name: ml-potentials-and-risks
 channels:
   - conda-forge
 dependencies:
-  - python=3.12
+  - python=3.11
 
   # Development Experience
   - jupyterlab=3
