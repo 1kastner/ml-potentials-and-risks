@@ -53,6 +53,16 @@ REM
     ECHO Conda is not available in your PATH. Guessing the location of the installation...
 
     ECHO Checking in user-specific installations below %USERPROFILE% for which users usually have writing access.
+    SET CONDASCRIPTS=%USERPROFILE%\AppData\Local\anaconda3\Scripts\
+    ECHO Checking for conda installation at !CONDASCRIPTS!
+    IF EXIST %CONDASCRIPTS% (
+        GOTO CONDA_FOUND
+    )
+    SET CONDASCRIPTS=%USERPROFILE%\AppData\Local\miniconda3\Scripts\
+    ECHO Checking for conda installation at !CONDASCRIPTS!
+    IF EXIST %CONDASCRIPTS% (
+        GOTO CONDA_FOUND
+    )
     SET CONDASCRIPTS=%USERPROFILE%\Anaconda3\Scripts\
     ECHO Checking for conda installation at !CONDASCRIPTS!
     IF EXIST %CONDASCRIPTS% (
