@@ -2,22 +2,24 @@ name: ml-potentials-and-risks
 channels:
   - conda-forge
 dependencies:
-  - python=3.9
+  - python=3.12
 
   # Development Experience
   - jupyterlab=3
   - jupyterlab-spellchecker
   - jupyterlab-lsp
-  - python-lsp-server
+  - python-lsp-server[all]
   - watermark
-  - pyls-flake8
+  - flake8-nb
 
-  # Required libraries
-  - numpy>=1.16.5, <1.23.0
+  # Improved Progress Reports in Jupyter Notebooks
+  - ipywidgets
+  - tqdm
+
+  # Data Science Libraries
+  - numpy
   - pandas
   - openpyxl
   - matplotlib
   - scikit-image
   - scikit-learn
-  - ipywidgets
-  - tqdm
