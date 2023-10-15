@@ -1,4 +1,4 @@
-\documentclass{tufte-handout}
+\documentclass[nobib]{tufte-handout}
 
 \usepackage[utf8]{inputenc}
 \usepackage[autostyle=true,german=quotes]{csquotes}
@@ -62,7 +62,7 @@ In der Vergangenheit hat ein erneutes Installieren von Anaconda dieses Problem d
 Lösungen für ein Setup mit mehreren Benutzern lassen sich unter
 \url{https://docs.anaconda.com/anaconda/install/multi-user/}
 finden.
-}
+}%
 Wenn Sie sich, wie die meisten, nur mit einem Benutzer-Account arbeiten, sind Sie hiervon nicht betroffen.
 
 Rufen Sie nach dem Download den Installer aus dem Download-Ordner auf und folgen Sie den Installationsschritten.
@@ -196,19 +196,27 @@ ausgewählt werden
 (mit einer 2 markiert).
 Danach startet ein Klick auf \texttt{Launch} die Anwendung JupyterLab im Browser
 (mit einer 3 markiert).
-Standardmäßig öffnet sich nun ein neuer Tab im Browser und JupyterLab zeigt zunächst den Inhalt vom Benutzer-Ordner an (unter Windows typischerweise \texttt{C:\textbackslash{}Users\textbackslash{}BENUTZERNAME}).
+Standardmäßig öffnet sich nun ein neuer Tab im Browser und JupyterLab zeigt zunächst den Inhalt vom Benutzer-Ordner an, wie in
+Abbildung\,\ref{fig:inside-jupyterlab} zu sehen.
 Von hier können Sie in den Unterordner \texttt{Dokumente} navigieren und zu den heruntergeladenen Seminarunterlagen gelangen.
 
 \begin{figure}[h]
-  \includegraphics{anaconda-navigator-jupyterlab--mit-reihenfolge}
+  \includegraphics[trim={0 1.5cm 0 0},clip]{anaconda-navigator-jupyterlab--mit-reihenfolge}
   \caption{Aus dem Anaconda Navigator kann JupyterLab gleich in der richtigen Umgebung gestartet werden.%
   Die Reihenfolge und Sortierung der Logos kann variieren.}%
-\label{fig:start-jupyterlab}
+  \label{fig:start-jupyterlab}
 \end{figure}
+
+\begin{figure}[h]
+  \includegraphics{jupyterlab-running}
+  \caption{In JupyterLab können links alle Dateien und Ordner aus dem Benutzerordner betrachtet werden.}%
+  \label{fig:inside-jupyterlab}
+\end{figure}
+
 
 \section{Erste Schritte mit JupyterLab}
 
-Wenn Sie die Seminar-Materialien wie unter Abschnitt \enquote{\nameref{sec:git-clone}} angegeben abgelegt haben, 
+Wenn Sie die Seminar-Materialien wie unter Abschnitt \enquote{\nameref{sec:git-clone}} angegeben abgelegt haben,
 können Sie in JupyterLab zum Ordner 
 \texttt{00-installationscheck}
 navigieren und dort das Jupyter Notebook (die Datei mit der Endung \texttt{.ipynb}) mit einem Doppelklick öffnen.
@@ -217,24 +225,20 @@ navigieren und dort das Jupyter Notebook (die Datei mit der Endung \texttt{.ipyn
 	Wenn Sie nicht \texttt{start-jupyterlab.bat} zum Starten von JupyterLab verwendet haben, können Sie den Inhalt aus dem Ordner \texttt{.user-settings} nach \texttt{\%USERPROFILE\%\textbackslash{}.jupyter\textbackslash{}lab\textbackslash{}user-settings} kopieren, um die gleichen Voreinstellungen zu verwenden.
 	Falls Sie Apple oder Linux verwenden, ist dieser Pfad entsprechend \texttt{\textasciitilde/.jupyter/lab/user-settings}.
 }
-Falls es Fehlermeldungen gibt, melden Sie sich bitte vor Beginn der Veranstaltung per Mail bei der Seminarleitung.
+Falls es Fehlermeldungen gibt, melden Sie sich bitte umgehend per Mail bei der Seminarleitung.
 
 Bitte schauen Sie ebenfalls im Ordner
 \texttt{01-einfuehrung-in-toolbox}
 um.
-Falls Sie noch keine Erfahrungen mit Python haben, arbeiten Sie bitte das Jupyter Notebook
+Falls Sie noch keine Erfahrungen mit Python haben, arbeiten Sie bitte
 \texttt{01-Einfuehrung-in-Python.ipynb}
 durch.
-Falls Ihnen das Format des Jupyter Notebooks noch unbekannt sind, schauen Sie sich bitte das Jupyter Notebook
+Falls Ihnen das Format des Jupyter Notebooks noch unbekannt sind, schauen Sie sich bitte
 \texttt{02-Was-kann-ein-Jupyter-Notebook.ipynb}
 an.
-Falls Sie noch nicht mit der Anwendung JupyterLab gearbeitet haben, könnte das Jupyter Notebook \texttt{03-Tipps-zu-JupyterLab.ipynb} für Sie interessant sein.
-
-\begin{figure}[h]
-  \includegraphics{jupyterlab-running}
-  \caption{In JupyterLab können links alle Dateien und Ordner aus dem Benutzerordner betrachtet werden.}%
-\label{fig:start-jupyterlab}
-\end{figure}
+Falls Sie noch nicht mit der Anwendung JupyterLab gearbeitet haben, könnte 
+\texttt{03-Tipps-zu-JupyterLab.ipynb}
+für Sie interessant sein.
 
 \FloatBarrier{}
 \doclicenseThis{}
