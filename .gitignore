@@ -42,3 +42,6 @@ _internal/graphics/nummeriere Bilder.pptx
 
 # Sphinx for integrity checks
 .sphinx/_build/
+*.fls
+*.tex.bak
+*.fdb_latexmk
