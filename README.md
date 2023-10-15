@@ -33,13 +33,13 @@ In den ersten Zellen des Jupyter Notebooks werden die zusätzlich benötigten Bi
 
 ## Geprüfte Bibliotheksversionen
 
-Bibliotheken werden regelmäßig geupdatet und es kann irgendwann passieren, dass die Jupyter Notebooks aus diesem Repo invaliden Code enthalten werden.
-Zur Sicherstellung, dass mithilfe eines Downgrades schnell eine funktionierende Version wiederhergestellt werden kann, werden regelmäßig folgende Kommandos ausgeführt:
+Bibliotheken werden regelmäßig geupdatet und es kann irgendwann passieren, dass die Jupyter Notebooks aus diesem Repo aufgrund von Updates nicht mehr ausführbaren Code enthalten werden.
+Zur Sicherstellung, dass mithilfe eines Downgrades schnell eine funktionierende Version wiederhergestellt werden kann, werden regelmäßig folgende Befehle ausgeführt:
 - `conda list --export > .working-library-versions/environment_pinned_versions.yml`
 - `conda list --explicit > .working-library-versions/spec-file.txt`
 - `pip freeze --local | Select-String -Pattern '^((?!file).)*$' > .working-library-versions/requirements.txt`
 
-Die Dateien befinden sich dann im Unterverzeichnis `./_working-library-versions` .
+Die Ausgabe-Dateien befinden sich im Unterverzeichnis `./_working-library-versions` und sind dafür da, um den letzten funktionierenden Arbeitsstand zu identifizieren.
 
 ## Lizenz
 
