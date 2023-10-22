@@ -16,6 +16,7 @@
     "ignoreMessagesPatterns": [
         "undefined name 'In'",
         "undefined name 'display'",
-        "undefined name 'df'"
+        "undefined name 'df'",
+        "E231 missing whitespace after ':'"
     ]
 }
