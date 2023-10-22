@@ -30,7 +30,7 @@ jobs:
       run: |
         pip install -r .sphinx/requirements.txt
 
-    - name: Run checks
+    - name: Check links
       run: |
         python -m sphinx -W --keep-going ./ ./.sphinx/_build/ \
         && python -m sphinx -W --keep-going -b linkcheck ./ ./.sphinx/_build/
