@@ -1,6 +1,7 @@
-:: Lösche alte Artefakte
+@ECHO off
 
-DEL *.aux *.log *.out *.blg *.bbl *.synctex(busy) *.synctex.gz
+:: Lösche alte Artefakte
+DEL *.aux *.log *.out *.blg *.bbl *.synctex(busy) *.synctex.gz *.fdb_latexmk *.fls
 
 :: Führe sämtliche Schritte durch, um die PDF korrekt zu entwickeln
 

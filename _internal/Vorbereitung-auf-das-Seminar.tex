@@ -9,7 +9,7 @@
 \title{Vorbereitung für das Seminar\\
 \enquote{Maschinelles Lernen: Potentiale und Risiken}}
 
-\author{Marvin Kastner \href{mailto:marvin.kastner@tuhh.de}{<marvin.kastner@tuhh.de>}}
+\author{Marvin Kastner \href{mailto:marvin.kastner@extern.nordakademie.de}{<marvin.kastner@extern.nordakademie.de>}}
 
 %\date{28 March 2010} % without \date command, current date is supplied
 
@@ -31,7 +31,7 @@
 
 \maketitle% this prints the handout title, author, and date
 
-In dieser Anleitung werden die Schritte aufgezählt, die von den Seminarteilnehmenden selbständig \emph{vor} Beginn des Seminars auf dem eigenen Endgerät (Laptop, MacBook, ...) durchgeführt werden müssen.
+In dieser Anleitung werden die Schritte aufgezählt, die von den Seminarteilnehmenden selbständig \emph{vor} Beginn des Seminars auf dem eigenen Endgerät (Laptop, MacBook, ...) durchgeführt werden sollen.
 Bitte planen Sie hierfür zirka eine Stunde ein, bei langsamen Internet oder weniger leistungsfähigen Endgeräten entsprechend mehr.
 Falls Sie während des Seminars kein eigenes leistungsfähiges Endgerät (z.\,B.\ nur einen alten Laptop oder ein Tablet) zur Verfügung haben sollten, sprechen Sie bitte frühzeitig die Seminarleitung an.
 
@@ -43,8 +43,9 @@ Nachdem Sie conda ggf.\ geupdatet haben, können Sie direkt zum Abschnitt \emph{
 
 Gehen Sie auf
 \url{https://www.anaconda.com/download} 
-und laden Sie die Anaconda-Version für Ihr Betriebssystem herunter.
-Anaconda ist eine Python-Distribution, die vorkompilierte Bibliotheken ausliefert und damit den Aufwand beim Installieren ebendieser minimiert.
+und laden Sie die Anaconda-Version für Ihr Betriebssystem und Prozessorarchitektur herunter.
+Die auf der Webseite vorgeschlagene Registrierung können Sie ohne Konsequenzen überspringen.
+Anaconda ist eine Python-Distribution, die vorkompilierte Bibliotheken ausliefert und damit den Installationsaufwand minimiert.
 Der Download-Bereich der Webseite sollte wie in Abbildung\,\ref{fig:anaconda-download-section} aussehen.
 
 \begin{marginfigure}
@@ -53,7 +54,7 @@ Der Download-Bereich der Webseite sollte wie in Abbildung\,\ref{fig:anaconda-dow
 \label{fig:anaconda-download-section}
 \end{marginfigure}
 
-Falls Sie auf Ihrem Endgerät mithilfe von zwei Accounts streng zwischen administrativen Tätigkeiten auf der einen Seite und dem alltäglichen Arbeiten mit stark eingeschränkten Rechten auf der anderen Seite unterscheiden, werden Sie vermutlich versuchen, Anaconda mit dem Administrator- bzw.\ root-Account zu installieren und danach mit dem anderen Account Anaconda zu nutzen.
+Falls Sie auf Ihrem Endgerät mithilfe von zwei Benutzeraccounts streng zwischen administrativen Tätigkeiten auf der einen Seite und dem alltäglichen Arbeiten mit stark eingeschränkten Rechten auf der anderen Seite unterscheiden, werden Sie vermutlich versuchen, Anaconda mit dem Administrator- bzw.\ root-Account zu installieren und danach mit dem anderen Account Anaconda zu nutzen.
 Falls das auf Sie zutrifft, lesen Sie bitte die Notiz in der rechten Spalte.
 \marginnote{%
 Die Installation von Anaconda erfordert keine erhöhten Rechte.
@@ -104,7 +105,7 @@ Es ist als ein Kommandozeilentool entwickelt worden, welches über
 heruntergeladen werden kann.
 Wer lieber grafische Oberflächen mag, kann sich einen der vielen GUI-Clients%
 \sidenote{Eine Liste ist auf
-\url{https://git-scm.com/download/gui/win}
+\url{https://git-scm.com/downloads/guis}
 zu finden.}
 aussuchen.
 Hier sollte neben dem Betriebssystem auch die ggf.\ kostenpflichtige Lizenz beachtet werden.
@@ -126,11 +127,11 @@ Falls Lernmaterialien später noch angepasst werden, müssen Sie diese dann alle
 
 \section{Installation der Bibliotheken}
 
-Mit der Installation von Anaconda ist u.\,a.\ die Applikation Anaconda Navigator ausgeliefert worden.
-Mit dem Anaconda Navigator können die benötigten Bibliotheken automatisch installiert werden.
+Mit der Installation von Anaconda ist u.\,a.\ die Applikation Anaconda Navigator mitinstalliert worden.
+Mit dem Anaconda Navigator können die im Seminar benötigten Bibliotheken automatisch installiert werden.
 \marginnote{%
-	Falls Sie Windows 10 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei \texttt{create-env.bat} auf der Wurzelebene des Projekts durch einen Doppelklick ausführen.
-	Im Falle einer Nachfrage bestätigen Sie, dass Sie dem Urheber der Batch-Datei vertrauen.
+	Falls Sie Windows 10/11 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei \texttt{create-env.bat} auf der Wurzelebene des Projekts durch einen Doppelklick ausführen.
+	Im Falle einer Nachfrage des Betriebssystems bestätigen Sie, dass Sie dem Urheber der Batch-Datei vertrauen.
 }
 In der Abbildung\,\ref{fig:anaconda-navigator} sehen Sie unten den Button \enquote{Import}
 (im Screenshot mit einer 1 markiert).
@@ -182,7 +183,7 @@ wird erläutert, wie eine existierende \texttt{environment.yml} zur Erstellung e
 JupyterLab kann nun über den Anaconda Navigator gestartet werden.
 In Abbildung~\ref{fig:start-jupyterlab} ist dies abgebildet.
 \marginnote{%
-	Falls Sie Windows 10 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei
+	Falls Sie Windows 10/11 verwenden und kein Multi-User-Setup haben, können Sie den folgenden Schritt dadurch abkürzen, dass Sie die Batch-Datei
 	\texttt{start-jupyterlab.bat}
 	auf der Wurzelebene des Projekts durch einen Doppelklick ausführen.
 	Dann ist auch die Wurzelebene des Projekts in JupyterLab der Wurzelordner.
