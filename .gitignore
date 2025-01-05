@@ -45,3 +45,7 @@ _internal/graphics/nummeriere Bilder.pptx
 *.fls
 *.tex.bak
 *.fdb_latexmk
+*_BACKUP_*
+*_BASE_*
+*_LOCAL_*
+*_REMOTE_*

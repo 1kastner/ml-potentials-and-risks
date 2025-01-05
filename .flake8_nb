@@ -6,6 +6,7 @@ exclude =
     *.ipynb_checkpoints*
     *.virtual_documents*
     *.py
+    *.sphinx*
 
 max-line-length = 120
 
@@ -16,6 +17,10 @@ ignore =
     E114  # Indentation of a comment does not need to be a multiple of 4
     E116  # Indentation of a comment is allowed to be "unexpected"
     W503  # Long lines need to be broken somewhere and otherwise W504 is violated
+    E231  # Colon is raised even in string formatting statements
+    E241  # multiple spaces after ':'
 
 per-file-ignores =
     *01-Einfuehrung-in-Python.ipynb*: F403, F405, E116, E731
+
+show-source = True

@@ -6,6 +6,7 @@ exclude =
     *__pycache__/*,
     *.ipynb_checkpoints/*,
     *.virtual_documents/*
+    *.sphinx/*
 
 max-line-length = 120
 
@@ -16,3 +17,5 @@ ignore =
 # E722 - Do not use bare except
 per-file-ignores =
     05-weiterfuehrende-beispiele/maschinelles-sehen/gtsrb_image_database_loader.py: E722
+
+show-source = True
